@@ -20,10 +20,15 @@ public class ElfoTest
     legolas.atirarFlecha(gimli);
     assertEquals(1,legolas.getExperiencia());
     assertEquals(41,legolas.getFlechas());
+    Elfo e2 = new Elfo("e2", 20);
+    e2.atirarFlecha(gimli);
+    assertEquals(19,e2.getFlechas());
   }
   @Test
   public void testarToString(){
       Elfo legolas = new Elfo("Legolas");
       assertEquals("Legolas possui 42 flechas e 0 de experiencia." , legolas.toString());
+      Elfo e2 = new Elfo("e2", 20);
+      assertEquals("e2 possui 20 flechas e 0 de experiencia." , e2.toString());
   }
 }
