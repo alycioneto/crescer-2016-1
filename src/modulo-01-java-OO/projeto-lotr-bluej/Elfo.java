@@ -15,4 +15,7 @@ public class Elfo{
         this.experiencia++;   
         dwarf.perdeVida();
     }
+    public String getNome(){
+        return this.nome;
+    }
 }
