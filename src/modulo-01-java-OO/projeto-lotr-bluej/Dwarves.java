@@ -1,9 +1,12 @@
 public class Dwarves{
-    private int vida = 110;
-    public int getVida(){
-        return this.vida;
+    private int vida;
+    private String nome;
+    public Dwarves(String nome){
+        this.vida = 110;
+        this.nome = nome;
     }
-    public void setVida(int vida){
-        this.vida = vida;
+    public void perdeVida(){
+        this.vida -= 10;
     }
+   
 }
