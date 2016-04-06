@@ -4,7 +4,7 @@ public class CestoDeLembas{
         this.lembas = lembas;
     }
     public boolean podeDividirEmPares(){
-            return (lembas >= 1 && lembas <= 100) && (lembas != 2 && lembas % 2 == 0);
+            return (lembas > 2 && lembas <= 100) && ( lembas % 2 == 0);
 
     }
 }
