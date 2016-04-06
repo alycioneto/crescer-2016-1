@@ -18,4 +18,13 @@ public class Elfo{
     public String getNome(){
         return this.nome;
     }
+    public int getFlechas(){
+        return this.flechas;
+    }
+    public int getExperiencia(){
+        return this.experiencia;
+    }
+    public String toString(){
+        return (nome + " possui " + flechas + " flechas e " + experiencia + " de experiencia." );
+    }
 }
