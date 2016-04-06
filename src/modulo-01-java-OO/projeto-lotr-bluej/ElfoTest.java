@@ -10,6 +10,8 @@ public class ElfoTest
    assertEquals("Legolas",legolas.getNome());
    assertEquals(0,legolas.getExperiencia());
    assertEquals(42,legolas.getFlechas());
+   Elfo e2 = new Elfo("e2", 20);
+   assertEquals(20,e2.getFlechas());
    }
   @Test
   public void testarAtirarFlecha(){
