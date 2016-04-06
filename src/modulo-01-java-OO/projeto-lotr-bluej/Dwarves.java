@@ -14,5 +14,8 @@ public class Dwarves{
     public String getNome(){
         return this.nome;
     }
+    public int getVida(){
+        return this.vida;
+    }
    
 }
