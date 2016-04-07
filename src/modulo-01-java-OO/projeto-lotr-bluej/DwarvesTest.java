@@ -5,13 +5,13 @@ import org.junit.Test;
 public class DwarvesTest
 {
     @Test
-    public void testarConstrutor(){
+    public void CriarDwarfComVida110(){
         Dwarves gimli = new Dwarves("Gimli");
         assertEquals("Gimli",gimli.getNome());
         assertEquals(110 , gimli.getVida());
    }
    @Test
-   public void testarPerdeVida(){
+   public void dwarfPerde10Vida(){
        Dwarves gimli = new Dwarves("Gimli");
        gimli.perdeVida();
        assertEquals(100 , gimli.getVida());
