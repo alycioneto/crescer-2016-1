@@ -29,17 +29,19 @@ public class DwarvesTest
             gimli.perdeVida();
             i++;
         }
-        assertEquals(gimli.getStatus(), Status.MORTO);    
+        assertEquals(gimli.getStatus(), Status.MORTO);  
+        assertEquals(gimli.getVida(),0);
     }
     @Test
     public void anaoPodeDeverVida(){
         Dwarves gimli = new Dwarves("Gimli");
         int i = 0;
-        while(i <= 12){
+        while(i <= 11){
             gimli.perdeVida();
             i++;
         }
         assertEquals(gimli.getVida(),0);
+        assertEquals(gimli.getStatus(), Status.MORTO);
     }
 }
 
