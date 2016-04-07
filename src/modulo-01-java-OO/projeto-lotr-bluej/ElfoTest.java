@@ -5,17 +5,17 @@ import org.junit.Test;
 public class ElfoTest
 {
   @Test
-  public void testarElfoPadrao42Flechas(){
+  public void criarElfoPadrao42Flechas(){
    Elfo legolas = new Elfo("Legolas");
    assertEquals(42,legolas.getFlechas());
   }
   @Test
-  public void testarElfoInformandoFlechas(){
+  public void criarElfoInformandoFlechas(){
      Elfo e2 = new Elfo("e2", 20);
      assertEquals(20,e2.getFlechas());  
   }
   @Test
-  public void testarAtirarFlecha(){
+  public void atirarFlechaDiminuiExperienciaEFlechas(){
     Elfo legolas = new Elfo("Legolas");
     Dwarves gimli = new Dwarves("Gimli");
     legolas.atirarFlecha(gimli);
@@ -23,7 +23,7 @@ public class ElfoTest
     assertEquals(41,legolas.getFlechas());
   }
   @Test
-  public void testarToString(){
+  public void toStringImprimeNaSintaxeCorreta(){
       Elfo legolas = new Elfo("Legolas");
       assertEquals("Legolas possui 42 flechas e 0 de experiencia." , legolas.toString());
       Elfo e2 = new Elfo("e2", 20);
