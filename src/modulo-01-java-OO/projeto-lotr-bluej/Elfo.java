@@ -7,12 +7,12 @@ public class Elfo{
         this.flechas = 42;
     }
     public Elfo(String nome, int flechas){
-        this.nome = nome;
+        this(nome);
         this.flechas = flechas;
     }
     public void atirarFlecha(Dwarves dwarf){
         this.flechas--;
-        this.experiencia++;   
+        this.experiencia++;  
         dwarf.perdeVida();
     }
     public String getNome(){
