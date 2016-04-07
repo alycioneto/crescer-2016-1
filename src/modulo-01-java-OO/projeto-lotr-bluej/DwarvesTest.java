@@ -16,4 +16,30 @@ public class DwarvesTest
        gimli.perdeVida();
        assertEquals(100 , gimli.getVida());
     }
+    @Test
+    public void dwarfNasceVivo(){
+        Dwarves gimli = new Dwarves("Gimli");
+        assertEquals(gimli.getStatus(), Status.VIVO);
+    }
+    @Test
+    public void aMorteDoDwarf(){
+        Dwarves gimli = new Dwarves("Gimli");
+        int i = 0;
+        while(i <= 12){
+            gimli.perdeVida();
+            i++;
+        }
+        assertEquals(gimli.getStatus(), Status.MORTO);    
+    }
+    @Test
+    public void anaoPodeDeverVida(){
+        Dwarves gimli = new Dwarves("Gimli");
+        int i = 0;
+        while(i <= 12){
+            gimli.perdeVida();
+            i++;
+        }
+        assertEquals(gimli.getVida(),0);
+    }
 }
+
