@@ -7,16 +7,16 @@ public class DataTerceiraEraTest
    @Test
    public void criarDataNaoBissexta(){
        DataTerceiraEra data = new DataTerceiraEra(10, 5 , 1900);
-       assertEquals(false, data.ehBissexto());
+       assertFalse(data.ehBissexto());
    }
    @Test
    public void criarDataBissextaNaoDivisivelpor100(){
        DataTerceiraEra data = new DataTerceiraEra(10, 5 , 2008);
-       assertEquals(true, data.ehBissexto());
+       assertTrue(data.ehBissexto());
    }
     @Test
    public void criarDataBissextaDivisivelpor400(){
        DataTerceiraEra data = new DataTerceiraEra(10, 5 , 2000);
-       assertEquals(true, data.ehBissexto());
+       assertTrue(data.ehBissexto());
     }
 }
