@@ -57,11 +57,27 @@ public class Dwarves{
             numeroDaSorte = numeroDaSorte * -33;
             return numeroDaSorte;
         }
-        else if (!dataNascimento.ehBissexto() && (nome == "Seixas" || nome == "Meireles")){
+        else if (!dataNascimento.ehBissexto()&& nome != null && (nome == "Seixas" || nome == "Meireles")){
             numeroDaSorte = (numeroDaSorte * 33) % 100;
             return numeroDaSorte;
         }
         return numeroDaSorte;
+    }
+    public void tentarSorte(){
+        if (getNumeroSorte() == -3333.0 ){
+            for(int i =0; i < inventario.getLista().size(); i++){
+                inventario.getLista().get(i).aumentaQuantidade();
+            }
+        }
+    }
+    public Item maiorQuantidadeDeItens(){
+        int posicao = 0;
+        for(int i =0; i < inventario.getLista().size(); i++){
+            if (inventario.getLista().get(i).getQuantidade() > inventario.getLista().get(posicao).getQuantidade() ){
+                posicao = i;
+            }
+        }
+        return inventario.getLista().get(posicao);
     }
   
 }
