@@ -14,6 +14,9 @@ public class DataTerceiraEra{
     public int getAno(){
         return this.ano;
     }
+    public String toString(){
+        return String.format("%d/%d/%d" , this.dia, this.mes, this.ano);
+    }
     public boolean ehBissexto(){
         return  ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0);
     }
