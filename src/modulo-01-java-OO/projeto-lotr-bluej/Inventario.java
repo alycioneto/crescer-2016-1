@@ -17,5 +17,14 @@ public class Inventario{
         }
         return !itens.isEmpty() ? itens.substring(0, itens.length() -1) : itens;
     }
-    
+    public Item maiorQuantidadeDeItens(){
+        int posicao = 0;
+        for(int i =0; i < lista.size(); i++){
+            if (lista.get(i).getQuantidade() > lista.get(posicao).getQuantidade() ){
+                posicao = i;
+            }
+        }
+        return lista.get(posicao);
+    }
+  
 }
