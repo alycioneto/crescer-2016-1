@@ -19,4 +19,9 @@ public class DataTerceiraEraTest
        DataTerceiraEra data = new DataTerceiraEra(10, 5 , 2000);
        assertTrue(data.ehBissexto());
     }
+    @Test
+    public void toStringImprimindoCorretamente(){
+        DataTerceiraEra data = new DataTerceiraEra(10, 5 , 2000);
+        assertEquals("10/5/2000", data.toString());
+    }
 }
