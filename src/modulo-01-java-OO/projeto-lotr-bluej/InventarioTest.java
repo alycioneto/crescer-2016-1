@@ -2,24 +2,29 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-public class InventarioTest
-{
-    @Test
-    public void colocandoItemNoIventario(){
-        Item espada = new Item(1, "Espada");
-        Inventario bolsa = new Inventario();
-        bolsa.adicionarItem(espada);
-        assertTrue(bolsa.getLista().size() == 1);
-    }
-    @Test
-    public void tirandoItemDoIventario(){
-        Item espada = new Item(1, "Espada");
-        Inventario bolsa = new Inventario();
-        bolsa.adicionarItem(espada);
-        assertTrue(bolsa.getLista().size() == 1);
-        bolsa.removerItem(espada);
-        assertTrue(bolsa.getLista().size()== 0);
-    }
-   
-}
 
+public class InventarioTest {
+    @Test
+    public void getDescricoesItensVazio() {
+        Inventario inventario = new Inventario();
+        String obtido = inventario.imprimirItens();
+        assertEquals("", obtido);
+    }
+
+    @Test
+    public void getDescricoesComUmItem() {
+        Inventario inventario = new Inventario();
+        inventario.adicionarItem(new Item(1, "Espada"));
+        String obtido = inventario.imprimirItens();
+        assertEquals("Espada", obtido);
+    }
+
+    @Test
+    public void getDescricoesComDoisItens() {
+        Inventario inventario = new Inventario();
+        inventario.adicionarItem(new Item(1, "Espada"));
+        inventario.adicionarItem(new Item(1, "Escudo"));
+        String obtido = inventario.imprimirItens();
+        assertEquals("Espada,Escudo", obtido);
+    }
+}

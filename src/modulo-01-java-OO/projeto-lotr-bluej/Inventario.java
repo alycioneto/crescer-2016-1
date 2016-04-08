@@ -10,7 +10,7 @@ public class Inventario{
     public ArrayList<Item> getLista(){
         return this.lista;
     }
-    public String imprimir(){
+    public String imprimirItens(){
         String itens = "";
         for(int i =0; i < lista.size(); i++){
                 itens += lista.get(i).getDescricao() + ",";   
