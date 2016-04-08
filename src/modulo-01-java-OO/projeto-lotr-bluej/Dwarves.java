@@ -69,15 +69,5 @@ public class Dwarves{
                 inventario.getLista().get(i).aumentaQuantidade();
             }
         }
-    }
-    public Item maiorQuantidadeDeItens(){
-        int posicao = 0;
-        for(int i =0; i < inventario.getLista().size(); i++){
-            if (inventario.getLista().get(i).getQuantidade() > inventario.getLista().get(posicao).getQuantidade() ){
-                posicao = i;
-            }
-        }
-        return inventario.getLista().get(posicao);
-    }
-  
+    }  
 }
