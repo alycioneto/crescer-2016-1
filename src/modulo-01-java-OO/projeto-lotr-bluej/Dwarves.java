@@ -53,11 +53,11 @@ public class Dwarves{
     }
     public double getNumeroSorte(){
         double numeroDaSorte = 101.0;
-        if (dataNascimento.ehBissexto() == true && (vida >= 80 && vida <= 90)){
+        if (dataNascimento.ehBissexto() && (vida >= 80 && vida <= 90)){
             numeroDaSorte = numeroDaSorte * -33;
             return numeroDaSorte;
         }
-        else if (dataNascimento.ehBissexto() == false && (nome == "Seixas" || nome == "Meireles")){
+        else if (!dataNascimento.ehBissexto() && (nome == "Seixas" || nome == "Meireles")){
             numeroDaSorte = (numeroDaSorte * 33) % 100;
             return numeroDaSorte;
         }

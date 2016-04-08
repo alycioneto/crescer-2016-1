@@ -52,7 +52,7 @@ public class DwarvesTest
         assertEquals(gimli.getStatus(), Status.VIVO);
     }
     @Test
-    public void aMorteDoDwarf(){
+    public void morteDoDwarf(){
         Dwarves gimli = new Dwarves("Gimli");
         int i = 0;
         while(i <= 12){
