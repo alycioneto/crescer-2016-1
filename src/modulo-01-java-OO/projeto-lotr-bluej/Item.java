@@ -1,14 +1,13 @@
-public class Item {
-    private int quantidade;
-    private String descricao;
-    public Item(int quantidade, String descricao){
-        this.quantidade = quantidade;
-        this.descricao = descricao;
+import java.util.ArrayList;
+public class Inventario{
+    private ArrayList<Item> lista = new ArrayList<>();
+    public void adicionarItem(Item item){
+        this.lista.add(item);
     }
-    public int getQuantidade(){
-        return this.quantidade;
+    public void removerItem(Item item){
+           this.lista.remove(item);
     }
-    public String getDescricao(){
-        return this.descricao;
+    public ArrayList<Item> getLista(){
+        return this.lista;
     }
 }
