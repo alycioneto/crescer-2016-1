@@ -65,8 +65,9 @@ public class Dwarves{
     }
     public void tentarSorte(){
         if (getNumeroSorte() == -3333.0 ){
-            for(int i =0; i < inventario.getLista().size(); i++){
-                inventario.getLista().get(i).aumentaQuantidade();
+            for(int i =1; i <= inventario.getLista().size(); i++){
+                int aux = i - 1 ;
+                inventario.getLista().get(aux).aumentaQuantidade();
             }
         }
     }  
