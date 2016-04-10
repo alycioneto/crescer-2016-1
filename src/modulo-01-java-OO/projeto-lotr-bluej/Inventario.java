@@ -27,17 +27,18 @@ public class Inventario{
         return lista.get(posicao);
     }
     public void ordenarItens(){
-        for(int a = 1 ; a <= this.lista.size(); a++){
-            int i = a -1;
-            for (int b = a + 1 ; b <= this.lista.size(); b++){
-                int j = b -1;
-                if (lista.get(i).getQuantidade() > this.lista.get(j).getQuantidade()){
-                    Item temp = this.lista.get(i);
-                    this.lista.set(i,this.lista.get(j));
-                    this.lista.set(j, temp);
-                } 
+        if (!lista.isEmpty()){
+            for(int a = 1 ; a <= this.lista.size(); a++){
+                int i = a -1;
+                for (int b = a + 1 ; b <= this.lista.size(); b++){
+                    int j = b -1;
+                    if (lista.get(i).getQuantidade() > this.lista.get(j).getQuantidade()){
+                        Item temp = this.lista.get(i);
+                        this.lista.set(i,this.lista.get(j));
+                        this.lista.set(j, temp);
+                    } 
+                }
             }
         }
     }
-  
 }
