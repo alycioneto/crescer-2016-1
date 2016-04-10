@@ -1,48 +1,43 @@
-import static org.junit.Assert.*;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-public class InventarioTest {
-    @Test
-    public void getDescricoesItensVazio() {
-        Inventario inventario = new Inventario();
-        String obtido = inventario.imprimirItens();
-        assertEquals("", obtido);
+import java.util.ArrayList;
+public class Inventario{
+    private ArrayList<Item> lista = new ArrayList<>();
+    public void adicionarItem(Item item){
+        this.lista.add(item);
     }
-
-    @Test
-    public void getDescricoesComUmItem() {
-        Inventario inventario = new Inventario();
-        inventario.adicionarItem(new Item(1, "Espada"));
-        String obtido = inventario.imprimirItens();
-        assertEquals("Espada", obtido);
+    public void removerItem(Item item){
+           this.lista.remove(item);
     }
-
-    @Test
-    public void getDescricoesComDoisItens() {
-        Inventario inventario = new Inventario();
-        inventario.adicionarItem(new Item(1, "Espada"));
-        inventario.adicionarItem(new Item(1, "Escudo"));
-        String obtido = inventario.imprimirItens();
-        assertEquals("Espada,Escudo", obtido);
+    public ArrayList<Item> getLista(){
+        return this.lista;
     }
-    @Test
-    public void retornaItemDeMaiorQuantidade(){
-        Inventario inventario = new Inventario();
-        inventario.adicionarItem(new Item(5, "Espada"));
-         inventario.adicionarItem(new Item(10, "Machado"));
-        inventario.adicionarItem(new Item(4, "Escudo"));
-        assertEquals("Machado",inventario.maiorQuantidadeDeItens().getDescricao());
+    public String imprimirItens(){
+        String itens = "";
+        for(int i =0; i < lista.size(); i++){
+                itens += lista.get(i).getDescricao() + ",";   
+        }
+        return !itens.isEmpty() ? itens.substring(0, itens.length() -1) : itens;
     }
-    @Test
-    public void colocarListaEmOrdem(){
-        Inventario inventario = new Inventario();
-        inventario.adicionarItem(new Item(5, "Espada"));
-        inventario.adicionarItem(new Item(4, "Escudo"));
-        inventario.adicionarItem(new Item(10, "Machado"));
-        inventario.adicionarItem(new Item(6, "Facas"));
-        inventario.ordenarItens();
-        assertEquals("Escudo,Espada,Facas,Machado" , inventario.imprimirItens());
+    public Item maiorQuantidadeDeItens(){
+        int posicao = 0;
+        for(int i =0; i < lista.size(); i++){
+            if (lista.get(i).getQuantidade() > lista.get(posicao).getQuantidade() ){
+                posicao = i;
+            }
+        }
+        return lista.get(posicao);
     }
+    public void ordenarItens(){
+        for(int a = 1 ; a <= this.lista.size(); a++){
+            int i = a -1;
+            for (int b = a + 1 ; b <= this.lista.size(); b++){
+                int j = b -1;
+                if (lista.get(i).getQuantidade() > this.lista.get(j).getQuantidade()){
+                    Item temp = this.lista.get(i);
+                    this.lista.set(i,this.lista.get(j));
+                    this.lista.set(j, temp);
+                } 
+            }
+        }
+    }
+  
 }
