@@ -143,7 +143,23 @@ public class DwarvesTest
         boolean obtidoMeireles = meireles.getNumeroSorte() == 101.0;
         assertTrue(obtidoMeireles);
           
+    }  
+    @Test
+    public void dwarfRecebeFlechadaNormal(){
+        Dwarves dwarf = new Dwarves("Dwarf");
+        dwarf.perdeVida();
+        assertEquals(100, dwarf.getVida(), 0.0);
+        assertEquals(0, dwarf.getExperiencia());
     }
-    
+    @Test
+    public void dwarfLeprechaunComSorte() {
+        DataTerceiraEra data = new DataTerceiraEra(20,11,2008);
+        Dwarves gimli = new Dwarves("gimli",data);
+        Item espada = new Item(5,"Espada");
+        gimli.adicionarItem(espada);
+        gimli.perdeVida();
+        gimli.perdeVida();
+        gimli.tentarSorte();
+        assertEquals(1005, gimli.getInventario().getLista().get(0).getQuantidade());
+    }
 }
-
