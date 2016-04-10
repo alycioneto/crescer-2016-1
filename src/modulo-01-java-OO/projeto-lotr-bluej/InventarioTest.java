@@ -27,4 +27,22 @@ public class InventarioTest {
         String obtido = inventario.imprimirItens();
         assertEquals("Espada,Escudo", obtido);
     }
+    @Test
+    public void retornaItemDeMaiorQuantidade(){
+        Inventario inventario = new Inventario();
+        inventario.adicionarItem(new Item(5, "Espada"));
+         inventario.adicionarItem(new Item(10, "Machado"));
+        inventario.adicionarItem(new Item(4, "Escudo"));
+        assertEquals("Machado",inventario.maiorQuantidadeDeItens().getDescricao());
+    }
+    @Test
+    public void colocarListaEmOrdem(){
+        Inventario inventario = new Inventario();
+        inventario.adicionarItem(new Item(5, "Espada"));
+        inventario.adicionarItem(new Item(4, "Escudo"));
+        inventario.adicionarItem(new Item(10, "Machado"));
+        inventario.adicionarItem(new Item(6, "Facas"));
+        inventario.ordenarItens();
+        assertEquals("Escudo,Espada,Facas,Machado" , inventario.imprimirItens());
+    }
 }
