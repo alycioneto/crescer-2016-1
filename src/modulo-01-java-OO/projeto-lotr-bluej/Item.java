@@ -12,6 +12,9 @@ public class Item{
         return this.quantidade;
     }
     public void aumentaQuantidade(){
-        this.quantidade = quantidade + 1000;
+        this.quantidade += 1000;
+    }
+    public void aumentaQuantidadeIrishDwarf(int vezesMultiplicas){
+        this.quantidade = quantidade +(vezesMultiplicas * 1000);
     }
 }
