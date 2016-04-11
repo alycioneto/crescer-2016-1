@@ -38,8 +38,8 @@ public class HobbitContador
         return multiplos;
    }
    public ArrayList<Integer> obterMultiplosDeTresAte(int numero) {
-       //Não existe a variavel Limite, break ap
-       ArrayList<Integer> multiplos = new ArrayList<>();
+       //Não existe a variavel Limite, break apos if e limite não existe
+       ArrayList<Integer> multiplos = new ArrayList<>(Arrays.asList(0));
        int multiplo = 0;
        for (int i = 1; i <= numero; i++) {
            if (i % 3 == 0){

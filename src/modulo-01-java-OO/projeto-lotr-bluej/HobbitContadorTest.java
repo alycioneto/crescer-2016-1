@@ -34,8 +34,9 @@ public class HobbitContadorTest
     public void multiplosDeTresAte(){
         HobbitContador frodo = new HobbitContador();
         ArrayList multiplos = frodo.obterMultiplosDeTresAte(10);
-        assertEquals(3,multiplos.get(0));
-        assertEquals(6,multiplos.get(1));
-        assertEquals(9,multiplos.get(2));            
+        assertEquals(0,multiplos.get(0));
+        assertEquals(3,multiplos.get(1));
+        assertEquals(6,multiplos.get(2));    
+        assertEquals(9,multiplos.get(3));  
     }
 }
