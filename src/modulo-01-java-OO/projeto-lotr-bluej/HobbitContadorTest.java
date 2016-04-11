@@ -15,6 +15,12 @@ public class HobbitContadorTest
        assertEquals(frodo.calcularDiferenca(arrayDePares),840);
     }
     @Test
+    public void calculandoADiferencaComArrayVazio(){
+        HobbitContador frodo = new HobbitContador();
+        ArrayList<ArrayList<Integer>> arrayDePares = new ArrayList<>();
+        assertEquals(frodo.calcularDiferenca(arrayDePares),0);
+    }
+    @Test
     public void verificarOMMC(){
         HobbitContador frodo = new HobbitContador();
         assertEquals(frodo.minimoMultiploComum(5, 4), 20);
