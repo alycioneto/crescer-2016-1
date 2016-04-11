@@ -1,35 +1,21 @@
-public class Dwarves{
-    private int vida, experiencia = 0;;
-    private String nome;
+public class Dwarves extends SerVivo{
+    private int vida;
     private Status status = Status.VIVO;
-    protected Inventario inventario = new Inventario();
     private DataTerceiraEra dataNascimento;
     public Dwarves(String nome){
+        super(nome);
         this.vida = 110;
-        this.nome = nome;
         this.dataNascimento = new DataTerceiraEra(1,1,1);
     }
     public Dwarves(String nome, DataTerceiraEra dataNascimento){
         this(nome);
         this.dataNascimento = dataNascimento;
     }
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-    public String getNome(){
-        return this.nome;
-    }
-    public int getExperiencia(){
-        return this.experiencia;
-    }
     public int getVida(){
         return this.vida;
     }
     public Status getStatus(){
         return this.status;
-    }
-    public Inventario getInventario(){
-        return this.inventario;
     }
     public DataTerceiraEra getDataNacimento(){
         return this.dataNascimento;
@@ -44,12 +30,6 @@ public class Dwarves{
             if (vida > 0)
                vida =  vidaAposFlechada;        
         }
-    }
-    public void adicionarItem(Item item){
-        this.inventario.adicionarItem(item);
-    }
-    public void perderItem(Item item){
-        this.inventario.removerItem(item);
     }
     public double getNumeroSorte(){
         double numeroDaSorte = 101.0;
