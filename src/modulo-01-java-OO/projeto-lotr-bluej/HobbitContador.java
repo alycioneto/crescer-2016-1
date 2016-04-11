@@ -3,16 +3,14 @@ public class HobbitContador
 {
    public int contador(ArrayList<ArrayList<Integer>> arrayDePares){
        int somaDifDoProdEMMC =0;
-       ArrayList<Integer> diferencaDoProdutoEMMC = new ArrayList<>();
        for (int i = 1; i <= arrayDePares.size(); i++){
            int auxI = i -1;
            for(int j = 1 ; j < arrayDePares.get(auxI).size();j++){
                int auxJ = j-1;
                    int produto = arrayDePares.get(auxI).get(auxJ) * arrayDePares.get(auxI).get(auxJ+1);
                    int mmc = minimoMultiploComum(arrayDePares.get(auxI).get(auxJ),arrayDePares.get(auxI).get(auxJ +1));
-                   diferencaDoProdutoEMMC.add(produto-mmc);
+                   somaDifDoProdEMMC = somaDifDoProdEMMC + (produto-mmc);
            }
-           somaDifDoProdEMMC = somaDifDoProdEMMC + diferencaDoProdutoEMMC.get(auxI);
        }
        return somaDifDoProdEMMC;    
    }
