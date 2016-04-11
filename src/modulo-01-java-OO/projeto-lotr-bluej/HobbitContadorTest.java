@@ -25,4 +25,9 @@ public class HobbitContadorTest
         HobbitContador frodo = new HobbitContador();
         assertEquals(frodo.minimoMultiploComum(5, 4), 20);
     }
+    @Test
+    public void maiorMultiploDeTres(){
+        HobbitContador frodo = new HobbitContador();
+        assertEquals(9 ,frodo.obterMaiorMultiploDeTresAte(10));
+    }
 }

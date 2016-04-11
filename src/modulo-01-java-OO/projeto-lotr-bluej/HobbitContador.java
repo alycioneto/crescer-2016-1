@@ -27,4 +27,14 @@ public class HobbitContador
         }
         return multNumA;
     } 
+   public int obterMaiorMultiploDeTresAte(int numero) {
+       // ArrayList Desncessario, variavel Limite não existe, seria Numero
+        int multiplos = 0;
+        for (int i = 1; multiplos <= numero; i++) {
+            if (i % 3 == 0) {
+                multiplos = i*3;
+            }
+        }
+        return multiplos;
+   }
 }  
