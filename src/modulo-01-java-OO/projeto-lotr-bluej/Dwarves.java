@@ -2,7 +2,7 @@ public class Dwarves{
     private int vida, experiencia = 0;;
     private String nome;
     private Status status = Status.VIVO;
-    private Inventario inventario = new Inventario();
+    protected Inventario inventario = new Inventario();
     private DataTerceiraEra dataNascimento;
     public Dwarves(String nome){
         this.vida = 110;
