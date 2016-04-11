@@ -5,6 +5,12 @@ import org.junit.Test;
 public class ElfoTest
 {
   @Test
+  public void CriarDwarfComVida110(){
+       Elfo legolas = new Elfo("legolas");
+       assertEquals("legolas",legolas.getNome());
+       assertEquals(100 , legolas.getVida());
+  }
+  @Test
   public void criarElfoPadrao42Flechas(){
    Elfo legolas = new Elfo("Legolas");
    assertEquals(42,legolas.getFlechas());

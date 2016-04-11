@@ -1,8 +1,9 @@
 public class Elfo extends SerVivo{
-    private int flechas;
+    protected int flechas;
     public Elfo(String nome){
         super(nome);
         this.flechas = 42;
+        this.vida = 100;
     }
     public Elfo(String nome, int flechas){
         this(nome);
