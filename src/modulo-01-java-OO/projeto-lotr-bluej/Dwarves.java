@@ -1,6 +1,4 @@
 public class Dwarves extends SerVivo{
-    private int vida;
-    private Status status = Status.VIVO;
     private DataTerceiraEra dataNascimento;
     public Dwarves(String nome){
         super(nome);
@@ -10,12 +8,6 @@ public class Dwarves extends SerVivo{
     public Dwarves(String nome, DataTerceiraEra dataNascimento){
         this(nome);
         this.dataNascimento = dataNascimento;
-    }
-    public int getVida(){
-        return this.vida;
-    }
-    public Status getStatus(){
-        return this.status;
     }
     public DataTerceiraEra getDataNacimento(){
         return this.dataNascimento;
