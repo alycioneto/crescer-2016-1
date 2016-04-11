@@ -1,7 +1,9 @@
 public class SerVivo{
-    protected int experiencia = 0;;
+    protected int experiencia = 0;
+    protected Status status = Status.VIVO;
     protected String nome;
     protected Inventario inventario = new Inventario();
+    protected int vida;
     public SerVivo(String nome){
         this.nome = nome;
     }
@@ -19,5 +21,11 @@ public class SerVivo{
     }
     public void perderItem(Item item){
         this.inventario.removerItem(item);
+    }
+    public Status getStatus(){
+        return this.status;
+    }
+    public int getVida(){
+        return this.vida;
     }
 }
