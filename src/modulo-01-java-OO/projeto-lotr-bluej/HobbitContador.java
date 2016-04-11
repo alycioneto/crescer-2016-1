@@ -3,12 +3,14 @@ public class HobbitContador
 {
    public int calcularDiferenca(ArrayList<ArrayList<Integer>> arrayDePares){
        int somaDifDoProdEMMC =0;
+       ArrayList<Integer> controlador;
        if(!arrayDePares.isEmpty()){
            for (int i = 1; i <= arrayDePares.size(); i++){
                int auxI = i -1;
-               int produto = arrayDePares.get(auxI).get(0) * arrayDePares.get(auxI).get(1);
-               int mmc = minimoMultiploComum(arrayDePares.get(auxI).get(0),arrayDePares.get(auxI).get(1));
-               somaDifDoProdEMMC = somaDifDoProdEMMC + (produto-mmc);
+               controlador = arrayDePares.get(auxI);
+               int produto = controlador.get(0) * controlador.get(1);
+               int mmc = minimoMultiploComum(controlador.get(0),controlador.get(1));
+               somaDifDoProdEMMC += (produto-mmc);
             }
         }
        return somaDifDoProdEMMC;    
