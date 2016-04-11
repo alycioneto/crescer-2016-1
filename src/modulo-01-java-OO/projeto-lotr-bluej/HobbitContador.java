@@ -30,11 +30,23 @@ public class HobbitContador
    public int obterMaiorMultiploDeTresAte(int numero) {
        // ArrayList Desncessario, variavel Limite não existe, seria Numero
         int multiplos = 0;
-        for (int i = 1; multiplos <= numero; i++) {
+        for (int i = 1; i <= numero; i++) {
             if (i % 3 == 0) {
-                multiplos = i*3;
+                multiplos = i;
             }
         }
         return multiplos;
+   }
+   public ArrayList<Integer> obterMultiplosDeTresAte(int numero) {
+       //Não existe a variavel Limite, break ap
+       ArrayList<Integer> multiplos = new ArrayList<>();
+       int multiplo = 0;
+       for (int i = 1; i <= numero; i++) {
+           if (i % 3 == 0){
+                multiplo = i;
+                multiplos.add(multiplo);
+            }
+        }
+       return multiplos;
    }
 }  
