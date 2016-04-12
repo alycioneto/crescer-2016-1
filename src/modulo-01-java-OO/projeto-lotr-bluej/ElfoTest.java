@@ -8,7 +8,8 @@ public class ElfoTest
   public void CriarDwarfComVida110(){
        Elfo legolas = new Elfo("legolas");
        assertEquals("legolas",legolas.getNome());
-       assertEquals(100 , legolas.getVida());
+       double obtido = legolas.getVida();
+       assertEquals(obtido, 100.0, 100.0);
   }
   @Test
   public void criarElfoPadrao42Flechas(){
