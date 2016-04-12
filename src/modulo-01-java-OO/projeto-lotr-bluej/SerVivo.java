@@ -3,7 +3,7 @@ public class SerVivo{
     protected Status status = Status.VIVO;
     protected String nome;
     protected Inventario inventario = new Inventario();
-    protected int vida;
+    protected double vida;
     public SerVivo(String nome){
         this.nome = nome;
     }
@@ -25,7 +25,7 @@ public class SerVivo{
     public Status getStatus(){
         return this.status;
     }
-    public int getVida(){
+    public double getVida(){
         return this.vida;
     }
 }
