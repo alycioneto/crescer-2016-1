@@ -1,9 +1,12 @@
 import java.util.*;
-public class HobbitContador
-{
+public class HobbitContador extends Personagem{
+   public HobbitContador(String nome){
+       super(nome);
+   }
    public int calcularDiferenca(ArrayList<ArrayList<Integer>> arrayDePares){
        int somaDifDoProdEMMC =0;
        ArrayList<Integer> controlador;
+      
        if(!arrayDePares.isEmpty()){
            for (int i = 1; i <= arrayDePares.size(); i++){
                int auxI = i -1;

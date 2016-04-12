@@ -1,10 +1,11 @@
-public class SerVivo{
+public abstract class Personagem
+{
     protected int experiencia = 0;
     protected Status status = Status.VIVO;
     protected String nome;
     protected Inventario inventario = new Inventario();
     protected double vida;
-    public SerVivo(String nome){
+    public Personagem(String nome){
         this.nome = nome;
     }
     public String getNome(){

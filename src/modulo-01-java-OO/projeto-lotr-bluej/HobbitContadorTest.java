@@ -7,7 +7,7 @@ public class HobbitContadorTest
 {
     @Test
     public void calculandoADiferencaCorretamente(){
-       HobbitContador frodo = new HobbitContador();
+       HobbitContador frodo = new HobbitContador("Frodo");
        ArrayList<ArrayList<Integer>> arrayDePares = new ArrayList<>();
        arrayDePares.add(new ArrayList<>(Arrays.asList(15, 18)));
        arrayDePares.add(new ArrayList<>(Arrays.asList(4, 5)));
@@ -16,23 +16,23 @@ public class HobbitContadorTest
     }
     @Test
     public void calculandoADiferencaComArrayVazio(){
-        HobbitContador frodo = new HobbitContador();
+        HobbitContador frodo = new HobbitContador("Frodo");
         ArrayList<ArrayList<Integer>> arrayDePares = new ArrayList<>();
         assertEquals(frodo.calcularDiferenca(arrayDePares),0);
     }
     @Test
     public void verificarOMMC(){
-        HobbitContador frodo = new HobbitContador();
+        HobbitContador frodo = new HobbitContador("Frodo");
         assertEquals(frodo.minimoMultiploComum(5, 4), 20);
     }
     @Test
     public void maiorMultiploDeTres(){
-        HobbitContador frodo = new HobbitContador();
+        HobbitContador frodo = new HobbitContador("Frodo");
         assertEquals(9 ,frodo.obterMaiorMultiploDeTresAte(10));
     }
     @Test
     public void multiplosDeTresAte(){
-        HobbitContador frodo = new HobbitContador();
+        HobbitContador frodo = new HobbitContador("Frodo");
         ArrayList multiplos = frodo.obterMultiplosDeTresAte(10);
         assertEquals(0,multiplos.get(0));
         assertEquals(3,multiplos.get(1));

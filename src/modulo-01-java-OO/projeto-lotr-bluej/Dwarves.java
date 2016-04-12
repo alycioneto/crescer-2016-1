@@ -1,4 +1,4 @@
-public class Dwarves extends SerVivo{
+public class Dwarves extends Personagem{
     private DataTerceiraEra dataNascimento;
     public Dwarves(String nome){
         super(nome);

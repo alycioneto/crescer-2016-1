@@ -9,10 +9,12 @@ public class ElfoNoturno extends Elfo{
         this.flechas--;
         this.experiencia += 3; 
         dwarf.perdeVida();
-        if(this.vida < 1)
-            this.status = Status.MORTO;
-        else
-            this.vida -= vida * 0.05;
+       if(this.vida < 1)
+          this.status = Status.MORTO;
+       else
+           this.vida -= vida * 0.05;
+            
+        //this.vida < 1 ? this.status = Status.MORTO:this.status;
     }
 
 }

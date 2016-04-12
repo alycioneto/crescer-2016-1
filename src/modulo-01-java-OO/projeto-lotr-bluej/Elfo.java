@@ -1,4 +1,4 @@
-public class Elfo extends SerVivo{
+public class Elfo extends Personagem{
     protected int flechas;
     public Elfo(String nome){
         super(nome);
