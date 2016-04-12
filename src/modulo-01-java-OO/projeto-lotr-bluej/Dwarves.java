@@ -16,7 +16,7 @@ public class Dwarves extends SerVivo{
         if(getNumeroSorte() < 0)
             experiencia = experiencia + 2;
         else if(getNumeroSorte() > 100){
-            int vidaAposFlechada = this.vida -10;
+            double vidaAposFlechada = this.vida -10;
             if (vidaAposFlechada == 0) 
                status = Status.MORTO;
             if (vida > 0)
