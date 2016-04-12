@@ -36,4 +36,11 @@ public class ElfoTest
       Elfo e2 = new Elfo("e2", 20);
       assertEquals(e2.getNome() + " possui " + e2.getFlechas() + " flechas e " + e2.getExperiencia() + " de experiencia." , e2.toString());
   }
+  @Test
+  public void verificarSeOAtributoEstaAumentandoAQuantidadeDeElfosCriados(){
+    int elfosJaCriados = Elfo.quantosElfosCriados();
+    Elfo a = new Elfo("legolas");
+    Elfo b = new Elfo("teste");
+    assertEquals(Elfo.quantosElfosCriados(),elfosJaCriados+2);
+  }
 }
