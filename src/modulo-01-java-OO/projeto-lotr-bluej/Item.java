@@ -17,4 +17,8 @@ public class Item{
     public void aumentaQuantidadeIrishDwarf(int vezesMultiplicas){
         this.quantidade = quantidade +(vezesMultiplicas * 1000);
     }
+    public boolean equals(Object obj){
+        Item outro = ((Item)obj);
+        return this.quantidade == outro.getQuantidade() && this.descricao.equals(outro.getDescricao());
+    }
 }
