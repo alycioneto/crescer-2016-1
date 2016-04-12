@@ -43,4 +43,7 @@ public class Dwarves extends Personagem{
             }
         }
     }  
+    public static Dwarves descobrirMenosVida(Dwarves dwarf1, Dwarves dwarf2 ){
+        return dwarf1.getVida() < dwarf2.getVida() ? dwarf1 : dwarf2;
+    }
 }

@@ -162,4 +162,25 @@ public class DwarvesTest
         gimli.tentarSorte();
         assertEquals(1005, gimli.getInventario().getLista().get(0).getQuantidade());
     }
+    @Test
+    public void descobrirVidaComDoisIguais(){
+        Dwarves dwarfMenor = Dwarves.descobrirMenosVida(new Dwarves("D1"), new Dwarves("D2"));
+        assertEquals("D2", dwarfMenor.getNome());
+        
+    }
+    @Test
+    public void descobrirgeVidaComOPrimeiroMenor(){
+        Dwarves d1 = new Dwarves("D1");
+        d1.perdeVida();
+        Dwarves d2 = new Dwarves("D2");
+        assertEquals(d1, Dwarves.descobrirMenosVida(d1,d2));
+    }
+    @Test
+    public void descobrirVidaComOSegundoMenor(){
+        Dwarves d1 = new Dwarves("D1");
+        Dwarves d2 = new Dwarves("D2");
+        d2.perdeVida();
+        assertEquals(d2, Dwarves.descobrirMenosVida(d1,d2));
+        
+    }
 }
