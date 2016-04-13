@@ -5,11 +5,18 @@ import org.junit.Test;
 public class ElfoTest
 {
   @Test
+  public void verificarSeOAtributoEstaAumentandoAQuantidadeDeElfosCriados(){
+    int elfosJaCriados = Elfo.quantosElfosCriados();
+    Elfo a = new Elfo("legolas");
+    Elfo b = new Elfo("teste");
+    assertEquals(Elfo.quantosElfosCriados(),elfosJaCriados+2);
+  }
+  @Test
   public void CriarDwarfComVida110(){
-       Elfo legolas = new Elfo("legolas");
-       assertEquals("legolas",legolas.getNome());
-       double obtido = legolas.getVida();
-       assertEquals(obtido, 100.0, 100.0);
+    Elfo legolas = new Elfo("legolas");
+    assertEquals("legolas",legolas.getNome());
+    double obtido = legolas.getVida();
+    assertEquals(obtido, 100.0, 100.0);
   }
   @Test
   public void criarElfoPadrao42Flechas(){
@@ -37,10 +44,16 @@ public class ElfoTest
       assertEquals(e2.getNome() + " possui " + e2.getFlechas() + " flechas e " + e2.getExperiencia() + " de experiencia." , e2.toString());
   }
   @Test
-  public void verificarSeOAtributoEstaAumentandoAQuantidadeDeElfosCriados(){
-    int elfosJaCriados = Elfo.quantosElfosCriados();
-    Elfo a = new Elfo("legolas");
-    Elfo b = new Elfo("teste");
-    assertEquals(Elfo.quantosElfosCriados(),elfosJaCriados+2);
+  public void elfosIguais(){
+      Elfo e1 = new Elfo("E1");
+      Elfo e2 = new Elfo("E1");
+      assertEquals(e1,e2);
+  }
+   @Test
+  public void elfosDiferentes(){
+      Elfo e1 = new Elfo("E1");
+      Elfo e2 = new Elfo("E2");
+      boolean obtido = e1.equals(e2);
+      assertFalse(obtido);
   }
 }

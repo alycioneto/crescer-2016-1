@@ -180,7 +180,23 @@ public class DwarvesTest
         Dwarves d1 = new Dwarves("D1");
         Dwarves d2 = new Dwarves("D2");
         d2.perdeVida();
-        assertEquals(d2, Dwarves.descobrirMenosVida(d1,d2));
-        
+        assertEquals(d2, Dwarves.descobrirMenosVida(d1,d2));   
+    }
+    @Test
+    public void dwarfIguais(){
+        DataTerceiraEra data1 = new DataTerceiraEra(1,1,2000);
+        DataTerceiraEra data2 = new DataTerceiraEra(1,1,2000);
+        Dwarves d1 = new Dwarves("d1", data1);
+        Dwarves d2 = new Dwarves("d1", data2);
+        assertEquals(d1,d2);
+    }
+    @Test
+     public void dwarfDiferentes(){
+        DataTerceiraEra data1 = new DataTerceiraEra(1,1,2000);
+        DataTerceiraEra data2 = new DataTerceiraEra(2,2,2002);
+        Dwarves d1 = new Dwarves("d1", data1);
+        Dwarves d2 = new Dwarves("d1", data2);
+        boolean obtido = d1.equals(d2);
+        assertFalse(obtido);
     }
 }
