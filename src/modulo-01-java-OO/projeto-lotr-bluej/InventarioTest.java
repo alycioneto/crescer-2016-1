@@ -45,4 +45,37 @@ public class InventarioTest {
         inventario.ordenarItens();
         assertEquals("Escudo,Espada,Facas,Machado" , inventario.imprimirItens());
     }
+    @Test
+    public void inventarioComTamanhosDiferentes(){
+        Inventario inventario1 = new Inventario();
+        Inventario inventario2 = new Inventario();
+        inventario1.adicionarItem(new Item(5, "Espada"));
+        inventario1.adicionarItem(new Item(4, "Escudo"));
+        inventario2.adicionarItem(new Item(5, "Espada"));
+        boolean obtido = inventario2.equals(inventario1);
+        assertFalse(obtido);   
+    }
+    @Test
+    public void inventarioComTamanhoIgualEItensDiferentes(){
+        Inventario inventario1 = new Inventario();
+        Inventario inventario2 = new Inventario();
+        inventario1.adicionarItem(new Item(5, "Espada"));
+        inventario2.adicionarItem(new Item(4, "Escudo"));
+        boolean obtido = inventario2.equals(inventario1);
+        assertFalse(obtido);   
+    }
+    @Test
+    public void inventariosNulos(){
+        Inventario inventario1 = new Inventario();
+        Inventario inventario2 = new Inventario();
+        assertEquals(inventario1,inventario2);  
+    }
+    @Test
+    public void inventariosIguais(){
+        Inventario inventario1 = new Inventario();
+        Inventario inventario2 = new Inventario();
+        inventario1.adicionarItem(new Item(1, "Espada"));
+        inventario2.adicionarItem(new Item(1, "Espada"));
+        assertEquals(inventario1, inventario2);
+    }
 }
