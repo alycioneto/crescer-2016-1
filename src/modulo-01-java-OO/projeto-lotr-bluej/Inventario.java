@@ -41,4 +41,17 @@ public class Inventario{
             }
         }
     }
+    public boolean equals(Object obj){
+        Inventario outro = ((Inventario)obj);
+        boolean eIgual = true;
+        if (this.lista == null && outro.getLista() == null)
+            eIgual = true;  
+        if((this.lista == null && outro.getLista() != null) || (this.lista != null && outro.getLista() == null) || lista.size() != outro.getLista().size())
+            eIgual = false;
+        for(int i =0; i <= lista.size()-1;i++){
+            if(!lista.get(i).equals(outro.getLista().get(i)))
+                eIgual = false;
+        }
+        return eIgual;
+    }
 }
