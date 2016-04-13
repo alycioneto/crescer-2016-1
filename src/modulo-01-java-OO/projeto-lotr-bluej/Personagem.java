@@ -29,4 +29,8 @@ public abstract class Personagem
     public double getVida(){
         return this.vida;
     }
+    public boolean equals(Object obj){
+        Personagem outro =((Personagem)obj); 
+        return this.experiencia == outro.getExperiencia() && this.status == outro.getStatus() && this.nome.equals(outro.getNome()) && this.vida == outro.getVida() && this.inventario.equals(outro.getInventario());
+    }
 }
