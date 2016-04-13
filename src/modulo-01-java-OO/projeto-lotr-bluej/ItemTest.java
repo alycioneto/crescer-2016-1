@@ -16,4 +16,17 @@ public class ItemTest
     espada.aumentaQuantidadeIrishDwarf(3);
     assertEquals(3003, espada.getQuantidade());
    }
+   @Test
+   public void itemsSaoIguais(){
+       Item espada = new Item(3,"Espada");
+       Item espadas = new Item(3,"Espada");
+       assertEquals(espada,espadas);
+   }
+   @Test
+   public void itemsSaoDiferentes(){
+       Item espada = new Item(4,"Espada");
+       Item espadas = new Item(3,"Espada");
+       boolean obtido = espada.equals(espadas);
+       assertFalse(obtido);
+   }
 }
