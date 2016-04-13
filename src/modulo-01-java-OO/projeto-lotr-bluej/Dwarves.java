@@ -46,4 +46,8 @@ public class Dwarves extends Personagem{
     public static Dwarves descobrirMenosVida(Dwarves dwarf1, Dwarves dwarf2 ){
         return dwarf1.getVida() < dwarf2.getVida() ? dwarf1 : dwarf2;
     }
+    public boolean equals(Object obj){
+        Dwarves outro = ((Dwarves)obj);
+        return super.equals(obj) && this.dataNascimento.equals(outro.getDataNacimento()) ;
+    }
 }

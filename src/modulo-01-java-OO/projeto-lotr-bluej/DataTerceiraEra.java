@@ -20,4 +20,8 @@ public class DataTerceiraEra{
     public boolean ehBissexto(){
         return  ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0);
     }
+    public boolean equals(Object obj){
+        DataTerceiraEra outro = ((DataTerceiraEra)obj);
+        return this.dia == outro.getDia() && this.mes == outro.getMes() && this.ano == outro.getAno();
+    }
 }
