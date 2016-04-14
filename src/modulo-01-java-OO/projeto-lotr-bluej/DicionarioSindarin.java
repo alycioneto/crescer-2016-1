@@ -2,27 +2,12 @@ import java.util.*;
 
 public class DicionarioSindarin{
     public static void main(String[] args){
-        HashMap<String,String> dicionarioSindarin = new HashMap<>();
-        dicionarioSindarin.put("terra","amar");
-        dicionarioSindarin.put("fogo","naur");
-        dicionarioSindarin.put("vento","gwaew");
-        dicionarioSindarin.put("água","nen");
-        dicionarioSindarin.put("coração","gûr");
-        
-        String terraEmSindarin = dicionarioSindarin.get("terra");
-        
-        dicionarioSindarin.put("água","nîn");
-        
-        dicionarioSindarin.remove("água");
-        
-        boolean estaVazio = dicionarioSindarin.isEmpty();
-        
-        int tamanhoDePares = dicionarioSindarin.size();
-        
-        boolean contemAgua = dicionarioSindarin.containsKey("água");
-        
-        boolean contemNaur = dicionarioSindarin.containsValue("naur");
-        
+        //dicionarioSindarin.remove("água");
+        //boolean estaVazio = dicionarioSindarin.isEmpty();
+        //int tamanhoDePares = dicionarioSindarin.size();
+        //boolean contemAgua = dicionarioSindarin.containsKey("água");
+        //boolean contemNaur = dicionarioSindarin.containsValue("naur");
+        /*
         for(String chave : dicionarioSindarin.keySet()){
             System.out.println(chave);
         }
@@ -45,5 +30,23 @@ public class DicionarioSindarin{
         for (Map.Entry<String, String> chaveValor: dicionarioSindarin.entrySet()){
             System.out.println("K:" + chaveValor.getKey() + "- V: " + chaveValor.getValue());
             }
+        }*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Tradutor Sindarin");
+        System.out.println("[P]ortugues [I]ngles");
+        String idioma = scanner.nextLine();
+        System.out.println("Qual a palavra deseja traduzir");
+        String palavra = scanner.nextLine();
+        TradutorSindarin tradutor = null;
+        switch(idioma.toLowerCase()){
+            case "i":
+            tradutor = new SindarinParaIngles();
+            break;
+            default:
+            tradutor = new SindarinParaPortugues();
+            break;
         }
+        if (tradutor.getDicionario().containsKey("naur"))
+            System.out.println("Naur significa " + tradutor.traduzir("naur"));
     }
+}

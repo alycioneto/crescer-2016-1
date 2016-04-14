@@ -13,4 +13,7 @@ public class SindarinParaPortugues implements TradutorSindarin
     public String traduzir(String palavraEmSindarin){
         return dicionario.get(palavraEmSindarin);
     }
+    public HashMap<String,String> getDicionario(){
+        return this.dicionario;
+    }
 }
