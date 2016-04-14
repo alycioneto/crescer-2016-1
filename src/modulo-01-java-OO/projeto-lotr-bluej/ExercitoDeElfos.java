@@ -1,7 +1,7 @@
 import java.util.*;
 public class ExercitoDeElfos{
      private HashMap<String,Elfo> exercito= new HashMap<>();
-     private HashMap<Status,Elfo> statusDoExercito = new HashMap<>();
+     private HashMap<Status,ArrayList<Elfo>> statusDoExercito = new HashMap<>();
      public void alistarElfos(Elfo elfo){
          if(elfo instanceof ElfoNoturno || elfo instanceof ElfoVerde){
              exercito.put(elfo.getNome(),elfo);
@@ -14,9 +14,15 @@ public class ExercitoDeElfos{
      public HashMap<String,Elfo> getExercito(){
          return this.exercito;
      }
+     //http://stackoverflow.com/questions/12134687/how-to-add-element-into-arraylist-in-hashmap
      public void agruparPorStatus(){
         for(Elfo elfo : exercito.values()){
-            statusDoExercito.put(elfo.getStatus(), elfo);
+            if(!statusDoExercito.containsKey(elfo.getStatus()))
+                statusDoExercito.put(elfo.getStatus(), new ArrayList<Elfo>());
+            statusDoExercito.get(elfo.getStatus()).add(elfo);
         }
+     }
+     public ArrayList<Elfo> buscar(Status status){
+         return statusDoExercito.get(status);
      }
 }
