@@ -16,6 +16,7 @@ public class ExercitoDeElfos{
      }
      //http://stackoverflow.com/questions/12134687/how-to-add-element-into-arraylist-in-hashmap
      public void agruparPorStatus(){
+        statusDoExercito.clear();
         for(Elfo elfo : exercito.values()){
             if(!statusDoExercito.containsKey(elfo.getStatus()))
                 statusDoExercito.put(elfo.getStatus(), new ArrayList<Elfo>());

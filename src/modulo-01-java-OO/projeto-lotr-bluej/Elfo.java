@@ -29,4 +29,6 @@ public class Elfo extends Personagem{
         Elfo outro = ((Elfo)obj);
         return super.equals(outro) && this.flechas == outro.getFlechas();
     }
+    public void tentarSorte(){   
+    }
 }

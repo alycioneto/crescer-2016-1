@@ -33,4 +33,5 @@ public abstract class Personagem
         Personagem outro =((Personagem)obj); 
         return this.experiencia == outro.getExperiencia() && this.status == outro.getStatus() && this.nome.equals(outro.getNome()) && this.vida == outro.getVida() && this.inventario.equals(outro.getInventario());
     }
+    public abstract void tentarSorte();
 }
