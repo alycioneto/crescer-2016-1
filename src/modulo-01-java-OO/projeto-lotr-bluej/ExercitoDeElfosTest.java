@@ -47,5 +47,32 @@ public class ExercitoDeElfosTest
         ArrayList<Elfo> elfosObtidos = exercito.buscar(Status.VIVO);
         assertTrue(elfosEsperados.equals(elfosEsperados));
     }
+    @Test
+    public void encontrarElfosMortos(){
+        Elfo e0 = criarElfoEMataLo("e0");
+        Elfo e1 = criarElfoEMataLo("e1");
+        Elfo e2 = criarElfoEMataLo("e2");
+        Elfo e3 = new ElfoNoturno("e3");
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.alistarElfos(e0);
+        exercito.alistarElfos(e1);
+        exercito.alistarElfos(e2);
+        exercito.alistarElfos(e3);
+        exercito.agruparPorStatus();
+        ArrayList<Elfo> elfosEsperados = new ArrayList<>();
+        elfosEsperados.add(e0);
+        elfosEsperados.add(e1);
+        elfosEsperados.add(e2);
+        ArrayList<Elfo> elfosObtidos = exercito.buscar(Status.MORTO);
+        assertTrue(elfosEsperados.equals(elfosEsperados));
+    }
     
+    private Elfo criarElfoEMataLo(String nome) {
+        Elfo elfo = new ElfoNoturno(nome);
+        // Forçando o hara-kiri
+        for (int i = 0; i < 90; i++) {
+            elfo.atirarFlecha(new Dwarves("Gimli"));
+        }
+        return elfo;
+    }
 }
