@@ -10,12 +10,12 @@ public class ArteDaGuerra implements EstrategiaDeAtaque{
         ordemDoUltimoAtaque = new ArrayList<>(); 
         for(Elfo elfo : pelotao){
             for(Dwarves dwarf: dwarves){
-                if (elfo instanceof ElfoNoturno && ataquesElfosNoturnos < elfosNoturnosPodemAtacar && ordemDoUltimoAtaque.size() != dwarves.size() ){
+                if (elfo instanceof ElfoNoturno && ataquesElfosNoturnos < elfosNoturnosPodemAtacar){
                     ataquesElfosNoturnos++;
                     elfo.atirarFlecha(dwarf);
                     this.ordemDoUltimoAtaque.add(elfo);
                 }
-                else if(elfo instanceof ElfoVerde && ordemDoUltimoAtaque.size() != dwarves.size()){
+                else if(elfo instanceof ElfoVerde  && ordemDoUltimoAtaque.size() != dwarves.size()){
                     elfo.atirarFlecha(dwarf);
                     this.ordemDoUltimoAtaque.add(elfo);
                 }

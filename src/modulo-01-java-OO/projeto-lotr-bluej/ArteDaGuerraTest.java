@@ -26,7 +26,7 @@ public class ArteDaGuerraTest
         estrategia.atacar(exercito.buscar(Status.VIVO), hordaDeDwarves);
         ArrayList<Elfo> listaDeElfos = estrategia.getOrdemDoUltimoAtaque();
         assertTrue(listaDeElfos.contains(e0));
-        assertFalse(listaDeElfos.contains(e1));
+        assertTrue(listaDeElfos.contains(e1));
         assertFalse(listaDeElfos.contains(e2));
         assertFalse(listaDeElfos.contains(e3));
         
