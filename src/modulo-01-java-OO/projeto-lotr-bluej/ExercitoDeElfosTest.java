@@ -66,6 +66,87 @@ public class ExercitoDeElfosTest
         ArrayList<Elfo> elfosObtidos = exercito.buscar(Status.MORTO);
         assertTrue(elfosEsperados.equals(elfosEsperados));
     }
+    @Test
+    public void ataqueDeElfosIntercalados(){
+   
+        Elfo e0 = new ElfoVerde("e0");
+        Elfo e1 = new ElfoNoturno("e1");
+        Elfo e2 = new ElfoNoturno("e2");
+        Elfo e3 = new ElfoVerde("e3");
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.alistarElfos(e0);
+        exercito.alistarElfos(e1);
+        exercito.alistarElfos(e2);
+        exercito.alistarElfos(e3);
+        exercito.agruparPorStatus();
+        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
+        Dwarves d1 = new Dwarves("d1");
+        Dwarves d2 = new Dwarves("d2");       
+        hordaDeDwarves.add(d1);
+        hordaDeDwarves.add(d2);
+        exercito.mudarEstrategia(new AtaqueIntercalado());
+        exercito.atacar(hordaDeDwarves);
+        ArrayList<Elfo> obtido = exercito.getOrdemDoUltimoAtaque();
+        assertEquals(obtido.get(0),e0);
+        assertEquals(obtido.get(1),e1);
+        assertEquals(obtido.get(2),e3);
+        assertEquals(obtido.get(3),e2);     
+    }
+    @Test
+     public void elfosNoturnosAtacamPrimeito(){
+        Elfo e0 = new ElfoVerde("e0");
+        Elfo e1 = new ElfoNoturno("e1");
+        Elfo e2 = new ElfoNoturno("e2");
+        Elfo e3 = new ElfoNoturno("e3");
+        Elfo e4 = new ElfoVerde("e4");
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.alistarElfos(e0);
+        exercito.alistarElfos(e1);
+        exercito.alistarElfos(e2);
+        exercito.alistarElfos(e3);
+        exercito.alistarElfos(e4);
+        exercito.agruparPorStatus();
+        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
+        Dwarves d1 = new Dwarves("d1");
+        Dwarves d2 = new Dwarves("d2");       
+        hordaDeDwarves.add(d1);
+        hordaDeDwarves.add(d2);
+        exercito.atacar(hordaDeDwarves);
+        ArrayList<Elfo> obtido = exercito.getOrdemDoUltimoAtaque();    
+        ArrayList<Elfo> esperado = new ArrayList<Elfo>();
+        esperado.add(e0);
+        esperado.add(e4);
+        esperado.add(e1);
+        esperado.add(e2);
+        esperado.add(e3);
+
+        assertEquals(esperado, obtido);
+    }
+    @Test
+    public void artedoAtaque(){
+        Elfo e0 = new ElfoVerde("e0");
+        Elfo e1 = new ElfoNoturno("e1");
+        Elfo e2 = new ElfoNoturno("e2");
+        Elfo e3 = new ElfoNoturno("e3");
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.alistarElfos(e0);
+        exercito.alistarElfos(e1);
+        exercito.alistarElfos(e2);
+        exercito.alistarElfos(e3);
+        exercito.agruparPorStatus();
+        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
+        Dwarves d1 = new Dwarves("d1");
+        Dwarves d2 = new Dwarves("d2");       
+        hordaDeDwarves.add(d1);
+        hordaDeDwarves.add(d2);
+        exercito.mudarEstrategia(new AtaqueIntercalado());
+        exercito.atacar(hordaDeDwarves);
+        ArrayList<Elfo> listaDeElfos = exercito.getOrdemDoUltimoAtaque();
+        assertTrue(listaDeElfos.contains(e0));
+        assertTrue(listaDeElfos.contains(e1));
+        assertFalse(listaDeElfos.contains(e2));
+        assertFalse(listaDeElfos.contains(e3));
+    }
     
     private Elfo criarElfoEMataLo(String nome) {
         Elfo elfo = new ElfoNoturno(nome);
@@ -75,4 +156,6 @@ public class ExercitoDeElfosTest
         }
         return elfo;
     }
+    
+    
 }
