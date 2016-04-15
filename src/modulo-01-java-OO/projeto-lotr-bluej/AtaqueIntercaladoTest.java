@@ -6,20 +6,16 @@ import org.junit.Test;
 public class AtaqueIntercaladoTest
 {
     @Test
-    public ArrayList<Elfo> elfosAtacam(){
+    public void elfosAtacam(){
         Elfo e0 = new ElfoVerde("e0");
         Elfo e1 = new ElfoNoturno("e1");
         Elfo e2 = new ElfoNoturno("e2");
-        Elfo e3 = new ElfoNoturno("e3");
-        Elfo e4 = new ElfoVerde("e4");
-        Elfo e5 = new ElfoVerde("e5");
+        Elfo e3 = new ElfoVerde("e3");
         ExercitoDeElfos exercito = new ExercitoDeElfos();
         exercito.alistarElfos(e0);
         exercito.alistarElfos(e1);
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
-        exercito.alistarElfos(e4);
-        exercito.alistarElfos(e5);
         exercito.agruparPorStatus();
         ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
         Dwarves d1 = new Dwarves("d1");
@@ -28,7 +24,14 @@ public class AtaqueIntercaladoTest
         hordaDeDwarves.add(d2);
         EstrategiaDeAtaque estrategia = new AtaqueIntercalado();
         estrategia.atacar(exercito.buscar(Status.VIVO), hordaDeDwarves);
-        ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque(); 
-        return obtido;
+        ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque();
+        assertEquals(obtido.get(0),e0);
+        assertEquals(obtido.get(1),e0);
+        assertEquals(obtido.get(2),e1);
+        assertEquals(obtido.get(3),e1);
+        assertEquals(obtido.get(4),e3);
+        assertEquals(obtido.get(5),e3);
+        assertEquals(obtido.get(6),e2);     
+        assertEquals(obtido.get(7),e2); 
     }
 }
