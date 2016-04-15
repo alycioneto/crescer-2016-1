@@ -25,6 +25,7 @@ public class ExercitoDeElfos{
        }
     }
     public ArrayList<Elfo> buscar(Status status){
+         agruparPorStatus();
          return statusDoExercito.get(status);
     }
       public void atacar(ArrayList<Dwarves> alvos) {
