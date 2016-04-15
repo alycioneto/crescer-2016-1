@@ -6,6 +6,7 @@ public class ArteDaGuerra implements EstrategiaDeAtaque{
     }
     public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarves> dwarves){
         double elfosNoturnosPodemAtacar =  ((int)((pelotao.size() * dwarves.size()) * 0.30));
+        int elfosNoturnosPodemAtacar =  ((int)((pelotao.size() * dwarves.size()) * 0.30));
         int ataquesElfosNoturnos = 0;
         ordemDoUltimoAtaque = new ArrayList<>(); 
         for(Elfo elfo : pelotao){
