@@ -78,7 +78,6 @@ public class ExercitoDeElfosTest
         exercito.alistarElfos(e1);
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
-        exercito.agruparPorStatus();
         ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
         Dwarves d1 = new Dwarves("d1");
         Dwarves d2 = new Dwarves("d2");       
@@ -105,7 +104,6 @@ public class ExercitoDeElfosTest
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
         exercito.alistarElfos(e4);
-        exercito.agruparPorStatus();
         ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
         Dwarves d1 = new Dwarves("d1");
         Dwarves d2 = new Dwarves("d2");       
@@ -119,7 +117,6 @@ public class ExercitoDeElfosTest
         esperado.add(e1);
         esperado.add(e2);
         esperado.add(e3);
-
         assertEquals(esperado, obtido);
     }
     @Test
@@ -133,13 +130,12 @@ public class ExercitoDeElfosTest
         exercito.alistarElfos(e1);
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
-        exercito.agruparPorStatus();
         ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
         Dwarves d1 = new Dwarves("d1");
         Dwarves d2 = new Dwarves("d2");       
         hordaDeDwarves.add(d1);
         hordaDeDwarves.add(d2);
-        exercito.mudarEstrategia(new AtaqueIntercalado());
+        exercito.mudarEstrategia(new ArteDaGuerra());
         exercito.atacar(hordaDeDwarves);
         ArrayList<Elfo> listaDeElfos = exercito.getOrdemDoUltimoAtaque();
         assertTrue(listaDeElfos.contains(e0));
