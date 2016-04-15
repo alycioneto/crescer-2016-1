@@ -30,4 +30,30 @@ public class AtaqueIntercaladoTest
         assertEquals(obtido.get(2),e3);
         assertEquals(obtido.get(3),e2);     
     }
+    public void exercitoSemElfo(){
+        ExercitoDeElfos exercito = new ExercitoDeElfos();;
+        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
+        Dwarves d1 = new Dwarves("d1");
+        Dwarves d2 = new Dwarves("d2"); 
+        hordaDeDwarves.add(d1);
+        hordaDeDwarves.add(d2);
+        EstrategiaDeAtaque estrategia = new AtaqueIntercalado();
+        estrategia.atacar(exercito.buscar(Status.VIVO), hordaDeDwarves);
+        ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque();
+        assertNull(obtido);
+    }
+    public void comQuantidadeDiferenteDeElfos(){
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        Elfo e0 = new ElfoVerde("e0");
+        exercito.alistarElfos(e0);
+        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
+        Dwarves d1 = new Dwarves("d1");
+        Dwarves d2 = new Dwarves("d2"); 
+        hordaDeDwarves.add(d1);
+        hordaDeDwarves.add(d2);
+        EstrategiaDeAtaque estrategia = new AtaqueIntercalado();
+        estrategia.atacar(exercito.buscar(Status.VIVO), hordaDeDwarves);
+        ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque();
+        assertNull(obtido);
+    }
 }
