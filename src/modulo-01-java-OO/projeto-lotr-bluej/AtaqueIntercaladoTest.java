@@ -26,12 +26,8 @@ public class AtaqueIntercaladoTest
         estrategia.atacar(exercito.buscar(Status.VIVO), hordaDeDwarves);
         ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque();
         assertEquals(obtido.get(0),e0);
-        assertEquals(obtido.get(1),e0);
-        assertEquals(obtido.get(2),e1);
-        assertEquals(obtido.get(3),e1);
-        assertEquals(obtido.get(4),e3);
-        assertEquals(obtido.get(5),e3);
-        assertEquals(obtido.get(6),e2);     
-        assertEquals(obtido.get(7),e2); 
+        assertEquals(obtido.get(1),e1);
+        assertEquals(obtido.get(2),e3);
+        assertEquals(obtido.get(3),e2);     
     }
 }

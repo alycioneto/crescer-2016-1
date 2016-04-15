@@ -29,15 +29,11 @@ public class NoturnosPorUltimoTest
         ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque();    
         ArrayList<Elfo> esperado = new ArrayList<Elfo>();
         esperado.add(e0);
-        esperado.add(e0);
-        esperado.add(e4);
         esperado.add(e4);
         esperado.add(e1);
-        esperado.add(e1);
-        esperado.add(e2);
         esperado.add(e2);
         esperado.add(e3);
-        esperado.add(e3);
+
         assertEquals(esperado, obtido);
     }
 }

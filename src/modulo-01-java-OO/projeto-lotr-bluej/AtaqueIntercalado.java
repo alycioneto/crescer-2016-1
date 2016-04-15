@@ -13,8 +13,8 @@ public class AtaqueIntercalado implements EstrategiaDeAtaque
                for(Dwarves dwarf : dwarves){
                    pelotao.get(i).atirarFlecha(dwarf);
                    tipoDoUltimoAtaque = pelotao.get(i).getClass().getName();
-                   this.ordemDoUltimoAtaque.add(pelotao.get(i));
                }
+               this.ordemDoUltimoAtaque.add(pelotao.get(i));
            }
            else if (tipoDoUltimoAtaque == pelotao.get(i).getClass().getName()){
                Elfo voltaProFimDaFila = pelotao.get(i);
@@ -25,9 +25,9 @@ public class AtaqueIntercalado implements EstrategiaDeAtaque
            else {
               for(Dwarves dwarf : dwarves){
                   pelotao.get(i).atirarFlecha(dwarf);
-                  this.ordemDoUltimoAtaque.add(pelotao.get(i));
                   tipoDoUltimoAtaque = pelotao.get(i).getClass().getName();
               }
+              this.ordemDoUltimoAtaque.add(pelotao.get(i));
            }
        }
    }

@@ -12,8 +12,8 @@ public class NoturnosPorUltimo implements EstrategiaDeAtaque
            if (elfo instanceof ElfoVerde){
                for (Dwarves dwarf : dwarves){
                    elfo.atirarFlecha(dwarf);
-                   this.ordemDoUltimoAtaque.add(elfo);
                }
+               this.ordemDoUltimoAtaque.add(elfo);
            }
            else
                 elfosNoturnos.add(elfo);
@@ -21,8 +21,8 @@ public class NoturnosPorUltimo implements EstrategiaDeAtaque
        for(Elfo elfo : elfosNoturnos){
            for (Dwarves dwarf : dwarves){
                elfo.atirarFlecha(dwarf);
-               this.ordemDoUltimoAtaque.add(elfo);
            }
+           this.ordemDoUltimoAtaque.add(elfo);
        }
    }
 }
