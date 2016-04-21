@@ -18,13 +18,17 @@ select UF, COUNT(1) as Estado from Cidade group by UF order by Estado desc;
 select distinct nome, uf from cidade group by nome, uf having count(1) > 1;
 --9
 select top 1 (idassociado + 1) from associado group by idassociado order by idassociado desc;
---10 *************
---11 -- Falta Terminar
+--10 
+begin transaction
+go 
+delete cidadeaux
+insert into CidadeAux select min(IDCidade), nome, uf from Cidade group by Nome,UF
+rollback
+--11 -- 
 begin transaction
 go
-update cidade set nome = '*' + nome where nome in() ;
+update cidade set nome = '*' + nome where IDCidade not in (select max(IDCidade) from Cidade group by Nome,UF) ;
 rollback
-
 --12
 select IDAssociado, nome, 
 	Case when sexo = 'F' then 'Feminino'
@@ -40,8 +44,13 @@ select NomeEmpregado, salario,
 			else '27,5'
 		end impostoRenda
 from empregado;
-
+--14
+begin transaction
+go
+delete from cidade where IDCidade not in( select min(IDCidade) from cidade group by Nome,UF)
+rollback
 --15
 --http://www.w3schools.com/sql/sql_unique.asp
-alter table cidadeaux add constraint UK_Nome_UF UNIQUE (nome,UF)
+alter table cidade add constraint UK_Nome_UF UNIQUE (Nome,UF)
+
 
