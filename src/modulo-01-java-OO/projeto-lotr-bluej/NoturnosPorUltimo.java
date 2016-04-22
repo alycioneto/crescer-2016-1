@@ -5,12 +5,12 @@ public class NoturnosPorUltimo implements EstrategiaDeAtaque
    public ArrayList<Elfo> getOrdemDoUltimoAtaque(){
         return this.ordemDoUltimoAtaque;
    }
-   public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarves> dwarves){
+   public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarf> dwarves){
        ordemDoUltimoAtaque = new ArrayList<>();
        ArrayList<Elfo> elfosNoturnos = new ArrayList<>();
        for(Elfo elfo : pelotao){
            if (elfo instanceof ElfoVerde){
-               for (Dwarves dwarf : dwarves){
+               for (Dwarf dwarf : dwarves){
                    elfo.atirarFlecha(dwarf);
                }
                this.ordemDoUltimoAtaque.add(elfo);
@@ -19,7 +19,7 @@ public class NoturnosPorUltimo implements EstrategiaDeAtaque
                 elfosNoturnos.add(elfo);
        }     
        for(Elfo elfo : elfosNoturnos){
-           for (Dwarves dwarf : dwarves){
+           for (Dwarf dwarf : dwarves){
                elfo.atirarFlecha(dwarf);
            }
            this.ordemDoUltimoAtaque.add(elfo);

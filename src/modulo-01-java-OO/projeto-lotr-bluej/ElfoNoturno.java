@@ -5,7 +5,7 @@ public class ElfoNoturno extends Elfo{
      public ElfoNoturno(String nome, int flechas){
         super(nome,flechas);
     }
-    public void atirarFlecha(Dwarves dwarf){
+    public void atirarFlecha(Dwarf dwarf){
         this.flechas--;
         this.experiencia += 3; 
         dwarf.perdeVida();
@@ -16,5 +16,4 @@ public class ElfoNoturno extends Elfo{
             
         //this.vida < 1 ? this.status = Status.MORTO:this.status;
     }
-
 }

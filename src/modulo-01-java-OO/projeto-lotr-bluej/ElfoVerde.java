@@ -5,7 +5,7 @@ public class ElfoVerde extends Elfo{
     public ElfoVerde(String nome, int flechas){
         super(nome,flechas);
     }
-    public void atirarFlecha(Dwarves dwarf){
+    public void atirarFlecha(Dwarf dwarf){
         this.flechas--;
         this.experiencia += 2;  
         dwarf.perdeVida();

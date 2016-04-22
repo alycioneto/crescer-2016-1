@@ -4,12 +4,12 @@ public class ArteDaGuerra implements EstrategiaDeAtaque{
     public ArrayList<Elfo> getOrdemDoUltimoAtaque(){
         return this.ordemDoUltimoAtaque;
     }
-    public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarves> dwarves){
+    public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarf> dwarves){
         ordemDoUltimoAtaque = new ArrayList<>(); 
-        int elfosNoturnosPodemAtacar =  ((int)((pelotao.size() * dwarves.size()) * 0.30));
+        int elfosNoturnosPodemAtacar =  (int)(pelotao.size() * dwarves.size() * 0.3);
         int ataquesElfosNoturnos = 0;
         for(Elfo elfo : pelotao){
-            for(Dwarves dwarf: dwarves){
+            for(Dwarf dwarf: dwarves){
                 if (elfo instanceof ElfoNoturno && ataquesElfosNoturnos < elfosNoturnosPodemAtacar){
                     ataquesElfosNoturnos++;
                     elfo.atirarFlecha(dwarf);

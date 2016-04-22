@@ -3,10 +3,14 @@ public class ExercitoDeElfos{
     private HashMap<String,Elfo> exercito= new HashMap<>();
     private HashMap<Status,ArrayList<Elfo>> statusDoExercito = new HashMap<>();
     private EstrategiaDeAtaque estrategia = new NoturnosPorUltimo();
-    public void alistarElfos(Elfo elfo){
-         if(elfo instanceof ElfoNoturno || elfo instanceof ElfoVerde){
-             exercito.put(elfo.getNome(),elfo);
-         }   
+    public void alistarElfos(Elfo elfo) {
+        //throws NaoPodeAlistarException
+        boolean podeAlistar = elfo instanceof ElfoNoturno || elfo instanceof ElfoVerde;
+        if(podeAlistar){
+            //throw new NaoPodeAlistarException();
+            exercito.put(elfo.getNome(),elfo);
+        }
+        
     }
     public Elfo getElfoDoExercitoPeloNome(String nome){
          Elfo elfo = exercito.get(nome);
@@ -28,7 +32,7 @@ public class ExercitoDeElfos{
          agruparPorStatus();
          return statusDoExercito.get(status);
     }
-      public void atacar(ArrayList<Dwarves> alvos) {
+      public void atacar(ArrayList<Dwarf> alvos) {
           this.estrategia.atacar(buscar(Status.VIVO), alvos);
     }
 

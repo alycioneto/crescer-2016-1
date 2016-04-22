@@ -19,9 +19,9 @@ public class NoturnosPorUltimoTest
         exercito.alistarElfos(e3);
         exercito.alistarElfos(e4);
         exercito.agruparPorStatus();
-        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
-        Dwarves d1 = new Dwarves("d1");
-        Dwarves d2 = new Dwarves("d2");       
+        ArrayList<Dwarf> hordaDeDwarves = new ArrayList<>();
+        Dwarf d1 = new Dwarf("d1");
+        Dwarf d2 = new Dwarf("d2");       
         hordaDeDwarves.add(d1);
         hordaDeDwarves.add(d2);
         EstrategiaDeAtaque estrategia = new NoturnosPorUltimo();

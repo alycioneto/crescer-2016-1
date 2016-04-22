@@ -1,4 +1,4 @@
-public class IrishDwarf extends Dwarves {
+public class IrishDwarf extends Dwarf {
     public IrishDwarf(String nome){
         super(nome);
     }

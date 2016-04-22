@@ -78,9 +78,9 @@ public class ExercitoDeElfosTest
         exercito.alistarElfos(e1);
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
-        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
-        Dwarves d1 = new Dwarves("d1");
-        Dwarves d2 = new Dwarves("d2");       
+        ArrayList<Dwarf> hordaDeDwarves = new ArrayList<>();
+        Dwarf d1 = new Dwarf("d1");
+        Dwarf d2 = new Dwarf("d2");       
         hordaDeDwarves.add(d1);
         hordaDeDwarves.add(d2);
         exercito.mudarEstrategia(new AtaqueIntercalado());
@@ -104,9 +104,9 @@ public class ExercitoDeElfosTest
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
         exercito.alistarElfos(e4);
-        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
-        Dwarves d1 = new Dwarves("d1");
-        Dwarves d2 = new Dwarves("d2");       
+        ArrayList<Dwarf> hordaDeDwarves = new ArrayList<>();
+        Dwarf d1 = new Dwarf("d1");
+        Dwarf d2 = new Dwarf("d2");       
         hordaDeDwarves.add(d1);
         hordaDeDwarves.add(d2);
         exercito.atacar(hordaDeDwarves);
@@ -130,9 +130,9 @@ public class ExercitoDeElfosTest
         exercito.alistarElfos(e1);
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
-        ArrayList<Dwarves> hordaDeDwarves = new ArrayList<>();
-        Dwarves d1 = new Dwarves("d1");
-        Dwarves d2 = new Dwarves("d2");       
+        ArrayList<Dwarf> hordaDeDwarves = new ArrayList<>();
+        Dwarf d1 = new Dwarf("d1");
+        Dwarf d2 = new Dwarf("d2");       
         hordaDeDwarves.add(d1);
         hordaDeDwarves.add(d2);
         exercito.mudarEstrategia(new ArteDaGuerra());
@@ -148,7 +148,7 @@ public class ExercitoDeElfosTest
         Elfo elfo = new ElfoNoturno(nome);
         // Forçando o hara-kiri
         for (int i = 0; i < 90; i++) {
-            elfo.atirarFlecha(new Dwarves("Gimli"));
+            elfo.atirarFlecha(new Dwarf("Gimli"));
         }
         return elfo;
     }

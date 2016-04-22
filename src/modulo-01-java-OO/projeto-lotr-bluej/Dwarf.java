@@ -1,11 +1,11 @@
-public class Dwarves extends Personagem{
+public class Dwarf extends Personagem{
     private DataTerceiraEra dataNascimento;
-    public Dwarves(String nome){
+    public Dwarf(String nome){
         super(nome);
         this.vida = 110;
         this.dataNascimento = new DataTerceiraEra(1,1,1);
     }
-    public Dwarves(String nome, DataTerceiraEra dataNascimento){
+    public Dwarf(String nome, DataTerceiraEra dataNascimento){
         this(nome);
         this.dataNascimento = dataNascimento;
     }
@@ -43,11 +43,11 @@ public class Dwarves extends Personagem{
             }
         }
     }  
-    public static Dwarves descobrirMenosVida(Dwarves dwarf1, Dwarves dwarf2 ){
+    public static Dwarf descobrirMenosVida(Dwarf dwarf1, Dwarf dwarf2 ){
         return dwarf1.getVida() < dwarf2.getVida() ? dwarf1 : dwarf2;
     }
     public boolean equals(Object obj){
-        Dwarves outro = ((Dwarves)obj);
+        Dwarf outro = ((Dwarf)obj);
         return super.equals(obj) && this.dataNascimento.equals(outro.getDataNacimento()) ;
     }
 }

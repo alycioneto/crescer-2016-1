@@ -5,7 +5,7 @@ public class AtaqueIntercalado implements EstrategiaDeAtaque
    public ArrayList<Elfo> getOrdemDoUltimoAtaque(){
         return this.ordemDoUltimoAtaque;
    }
-   public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarves> dwarves){
+   public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarf> dwarves){
        ordemDoUltimoAtaque = new ArrayList<>();
        String tipoDoUltimoAtaque = "";
        int elfosNoturnos =0;
@@ -19,7 +19,7 @@ public class AtaqueIntercalado implements EstrategiaDeAtaque
        if (elfosNoturnos == elfosVerdes){
            for(int i = 0; i <= pelotao.size() -1; i++){
                if(ordemDoUltimoAtaque.size()== 0 ){
-                   for(Dwarves dwarf : dwarves){
+                   for(Dwarf dwarf : dwarves){
                        pelotao.get(i).atirarFlecha(dwarf);
                        tipoDoUltimoAtaque = pelotao.get(i).getClass().getName();
                     }
@@ -32,7 +32,7 @@ public class AtaqueIntercalado implements EstrategiaDeAtaque
                     i--;
                 } 
                 else {
-                    for(Dwarves dwarf : dwarves){
+                    for(Dwarf dwarf : dwarves){
                         pelotao.get(i).atirarFlecha(dwarf);
                         tipoDoUltimoAtaque = pelotao.get(i).getClass().getName();
                     }

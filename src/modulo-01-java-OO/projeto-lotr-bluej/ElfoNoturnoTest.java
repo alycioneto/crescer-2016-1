@@ -8,7 +8,7 @@ public class ElfoNoturnoTest
     public void elfoNoturnoMorre(){
         Elfo elfo = new ElfoNoturno("Elfo");
         while (elfo.getStatus() != Status.MORTO){
-            elfo.atirarFlecha(new Dwarves ("gimli"));
+            elfo.atirarFlecha(new Dwarf ("gimli"));
         }
         assertEquals(elfo.getStatus() , Status.MORTO);
     }

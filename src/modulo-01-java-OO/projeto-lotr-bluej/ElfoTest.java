@@ -31,7 +31,7 @@ public class ElfoTest
   @Test
   public void atirarFlechaDiminuiExperienciaEFlechas(){
     Elfo legolas = new Elfo("Legolas");
-    Dwarves gimli = new Dwarves("Gimli");
+    Dwarf gimli = new Dwarf("Gimli");
     legolas.atirarFlecha(gimli);
     assertEquals(1,legolas.getExperiencia());
     assertEquals(41,legolas.getFlechas());

@@ -11,7 +11,7 @@ public class Elfo extends Personagem{
         this(nome);
         this.flechas = flechas;
     }
-    public void atirarFlecha(Dwarves dwarf){
+    public void atirarFlecha(Dwarf dwarf){
         this.flechas--;
         this.experiencia++;  
         dwarf.perdeVida();
