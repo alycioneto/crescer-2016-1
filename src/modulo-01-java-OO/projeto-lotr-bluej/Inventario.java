@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 public class Inventario{
     private ArrayList<Item> lista = new ArrayList<>();
     public void adicionarItem(Item item){
@@ -27,11 +27,9 @@ public class Inventario{
         return lista.get(posicao);
     }
     public void ordenarItens(){
-        if (!lista.isEmpty()){
-            for(int a = 1 ; a <= this.lista.size(); a++){
-                int i = a -1;
-                for (int b = a + 1 ; b <= this.lista.size(); b++){
-                    int j = b -1;
+        /*if (!lista.isEmpty()){
+            for(int i = 0 ; i < this.lista.size() -1; i++){
+                for (int j = 1 ; j < this.lista.size() -1 ; j++){
                     if (lista.get(i).getQuantidade() > this.lista.get(j).getQuantidade()){
                         Item temp = this.lista.get(i);
                         this.lista.set(i,this.lista.get(j));
@@ -39,6 +37,9 @@ public class Inventario{
                     } 
                 }
             }
+        }*/
+        if(!lista.isEmpty()){
+            Collections.sort(lista);
         }
     }
     public boolean equals(Object obj){
