@@ -31,10 +31,8 @@ public class Elfo extends Personagem implements Comparable<Elfo>{
     }
     public void tentarSorte(){   
     }
+    //http://www.javapractices.com/topic/TopicAction.do?Id=10
     public int compareTo(Elfo elfo){
-        int menor = -1;
-        int igual = 0;
-        int maior = 1;
         if (this.getClass() == elfo.getClass()) 
             return 0;
         else if(elfo instanceof ElfoVerde)
