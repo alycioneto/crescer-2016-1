@@ -18,25 +18,26 @@ public class AtaqueIntercalado implements EstrategiaDeAtaque
        }
        if (elfosNoturnos == elfosVerdes){
            for(int i = 0; i <= pelotao.size() -1; i++){
+               Elfo elfoAtaque = pelotao.get(i);
                if(ordemDoUltimoAtaque.size()== 0 ){
                    for(Dwarf dwarf : dwarves){
-                       pelotao.get(i).atirarFlecha(dwarf);
-                       tipoDoUltimoAtaque = pelotao.get(i).getClass().getName();
+                       elfoAtaque.atirarFlecha(dwarf);
+                       tipoDoUltimoAtaque = elfoAtaque.getClass().getName();
                     }
-                    this.ordemDoUltimoAtaque.add(pelotao.get(i));
+                    this.ordemDoUltimoAtaque.add(elfoAtaque);
                 }
-                else if (tipoDoUltimoAtaque == pelotao.get(i).getClass().getName()){
-                    Elfo voltaProFimDaFila = pelotao.get(i);
+                else if (tipoDoUltimoAtaque == elfoAtaque.getClass().getName()){
+                    Elfo voltaProFimDaFila = elfoAtaque;
                     pelotao.remove(i);
                     pelotao.add(voltaProFimDaFila);
                     i--;
                 } 
                 else {
                     for(Dwarf dwarf : dwarves){
-                        pelotao.get(i).atirarFlecha(dwarf);
-                        tipoDoUltimoAtaque = pelotao.get(i).getClass().getName();
+                        elfoAtaque.atirarFlecha(dwarf);
+                        tipoDoUltimoAtaque = elfoAtaque.getClass().getName();
                     }
-                    this.ordemDoUltimoAtaque.add(pelotao.get(i));
+                    this.ordemDoUltimoAtaque.add(elfoAtaque);
                 }
             }
         }
