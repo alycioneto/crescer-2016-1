@@ -1,4 +1,4 @@
-public class Elfo extends Personagem{
+public class Elfo extends Personagem implements Comparable<Elfo>{
     protected int flechas;
     private static int elfosCriados =0;
     public Elfo(String nome){
@@ -30,5 +30,16 @@ public class Elfo extends Personagem{
         return super.equals(outro) && this.flechas == outro.getFlechas();
     }
     public void tentarSorte(){   
+    }
+    public int compareTo(Elfo elfo){
+        int menor = -1;
+        int igual = 0;
+        int maior = 1;
+        if (this.getClass() == elfo.getClass()) 
+            return 0;
+        else if(elfo instanceof ElfoVerde)
+            return 1;
+        else 
+            return -1;
     }
 }
