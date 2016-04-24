@@ -30,7 +30,8 @@ select  SUM(Salario * 0.145) as Aumento_Salarial from Empregado where IDDepartam
 --8
 select NomeDepartamento from Departamento where IDDepartamento in (select top 1 e.IDDepartamento from Empregado e inner join Departamento d on e.IDDepartamento = d.IDDepartamento order by Salario desc );
 
-
+--9
+select a.Nome, c.Nome from Associado a inner join Cidade c on a.IDCidade = c.IDCidade union all select e.NomeEmpregado, d.Localizacao from Empregado e inner join Departamento d on e.IDDepartamento = d.IDDepartamento;
 
 --10
 
