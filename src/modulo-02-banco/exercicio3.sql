@@ -26,3 +26,6 @@ rollback
 --7
 
 select  SUM(Salario * 0.145) as Aumento_Salarial from Empregado where IDDepartamento in( select IDDepartamento from Departamento where Localizacao = 'Sao Paulo');
+
+--8
+select NomeDepartamento from Departamento where IDDepartamento in (select top 1 e.IDDepartamento from Empregado e inner join Departamento d on e.IDDepartamento = d.IDDepartamento order by Salario desc );
