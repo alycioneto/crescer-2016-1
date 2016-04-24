@@ -17,3 +17,8 @@ Select e.NomeEmpregado, d.NomeDepartamento, g.NomeEmpregado as NomeGerente
 from Empregado e inner join Departamento d on e.IDDepartamento = d.IDDepartamento
 inner join Empregado g on e.IDGerente = g.IDEmpregado
 
+--6
+SELECT * INTO CopiaEmpregado FROM empregado;
+begin transaction go
+update CopiaEmpregado set Salario = Salario * 1.145 where IDDepartamento in( select IDDepartamento from Departamento where Localizacao = 'Sao Paulo'); 
+rollback
