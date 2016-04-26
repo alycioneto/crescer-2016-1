@@ -4,7 +4,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 public class ArteDaGuerraTest
-{
+{   
+     @After
+    public void tearDown() {
+        System.gc();
+    }
     @Test
     public void elfosAtacam(){
         Elfo e0 = new ElfoVerde("e0");
@@ -16,7 +20,6 @@ public class ArteDaGuerraTest
         exercito.alistarElfos(e1);
         exercito.alistarElfos(e2);
         exercito.alistarElfos(e3);
-        exercito.agruparPorStatus();
         ArrayList<Dwarf> hordaDeDwarves = new ArrayList<>();
         Dwarf d1 = new Dwarf("d1");
         Dwarf d2 = new Dwarf("d2");       
@@ -28,8 +31,15 @@ public class ArteDaGuerraTest
         assertTrue(listaDeElfos.contains(e0));
         assertTrue(listaDeElfos.contains(e1));
         assertFalse(listaDeElfos.contains(e2));
-        assertFalse(listaDeElfos.contains(e3));
-        
-       
+        assertFalse(listaDeElfos.contains(e3));     
     }
+    @Test
+    public void ataqueComExercitoVazio() {
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.mudarEstrategia(new ArteDaGuerra());
+        exercito.atacar(new ArrayList<>(Arrays.asList(new Dwarf("D1"), new Dwarf("D2"))));
+        List<Elfo> ordemAtaque = exercito.getOrdemDoUltimoAtaque();
+        assertTrue(ordemAtaque.isEmpty());
+    }
+
 }

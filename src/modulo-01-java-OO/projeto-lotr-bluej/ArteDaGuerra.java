@@ -5,19 +5,22 @@ public class ArteDaGuerra implements EstrategiaDeAtaque{
         return this.ordemDoUltimoAtaque;
     }
     public void atacar(ArrayList<Elfo> pelotao, ArrayList<Dwarf> dwarves){
-        ordemDoUltimoAtaque = new ArrayList<>(); 
-        int elfosNoturnosPodemAtacar =  (int)(pelotao.size() * dwarves.size() * 0.3);
-        int ataquesElfosNoturnos = 0;
-        for(Elfo elfo : pelotao){
-            for(Dwarf dwarf: dwarves){
-                if (elfo instanceof ElfoNoturno && ataquesElfosNoturnos < elfosNoturnosPodemAtacar){
-                    ataquesElfosNoturnos++;
-                    elfo.atirarFlecha(dwarf);
-                    this.ordemDoUltimoAtaque.add(elfo);
-                }
-                else if(elfo instanceof ElfoVerde  && ordemDoUltimoAtaque.size() != dwarves.size()){
-                    elfo.atirarFlecha(dwarf);
-                    this.ordemDoUltimoAtaque.add(elfo);
+        ordemDoUltimoAtaque = new ArrayList<>();        
+        boolean naoTemExercito = pelotao == null;
+        if(!naoTemExercito){
+            int elfosNoturnosPodemAtacar =  (int)(pelotao.size() * dwarves.size() * 0.3);
+            int ataquesElfosNoturnos = 0;
+            for(Elfo elfo : pelotao){
+                for(Dwarf dwarf: dwarves){
+                    if (elfo instanceof ElfoNoturno && ataquesElfosNoturnos < elfosNoturnosPodemAtacar){
+                        ataquesElfosNoturnos++;
+                        elfo.atirarFlecha(dwarf);
+                        this.ordemDoUltimoAtaque.add(elfo);
+                    }
+                    else if(elfo instanceof ElfoVerde  && ordemDoUltimoAtaque.size() != dwarves.size()){
+                        elfo.atirarFlecha(dwarf);
+                        this.ordemDoUltimoAtaque.add(elfo);
+                    }
                 }
             }
         }

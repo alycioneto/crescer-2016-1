@@ -36,5 +36,13 @@ public class NoturnosPorUltimoTest
 
         assertEquals(esperado, obtido);
     }
+    @Test
+    public void ataqueComExercitoVazio() {
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.mudarEstrategia(new NoturnosPorUltimo());
+        exercito.atacar(new ArrayList<>(Arrays.asList(new Dwarf("D1"), new Dwarf("D2"))));
+        List<Elfo> ordemAtaque = exercito.getOrdemDoUltimoAtaque();
+        assertTrue(ordemAtaque.isEmpty());
+    }
 }
 

@@ -56,4 +56,12 @@ public class AtaqueIntercaladoTest
         ArrayList<Elfo> obtido = estrategia.getOrdemDoUltimoAtaque();
         assertNull(obtido);
     }
+     @Test
+    public void ataqueComExercitoVazio() {
+        ExercitoDeElfos exercito = new ExercitoDeElfos();
+        exercito.mudarEstrategia(new AtaqueIntercalado());
+        exercito.atacar(new ArrayList<>(Arrays.asList(new Dwarf("D1"), new Dwarf("D2"))));
+        List<Elfo> ordemAtaque = exercito.getOrdemDoUltimoAtaque();
+        assertTrue(ordemAtaque.isEmpty());
+    }
 }
