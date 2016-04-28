@@ -1,0 +1,29 @@
+body{
+  background-image: url("https://pokewalls.files.wordpress.com/2011/12/3venusaur1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 100px;
+  font-family: arial;
+}
+header span:first-of-type{
+  display: none;
+}
+.personagens h2:last-of-type{
+  display:none;
+}
+.personagens ul:last-of-type{
+  display:none;
+}
+.digiescolhidos{
+  display: none;
+}
+header{
+  width: 75%;
+  height: 100px;
+  margin: auto;
+  border: solid;
+  padding: 5%;
+}
+header h1{
+    align-content: center;
+}
