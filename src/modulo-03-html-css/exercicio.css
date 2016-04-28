@@ -1,0 +1,40 @@
+body{
+  margin: 30px;
+}
+.container{
+  margin-bottom: : 30px;
+  overflow-y: auto;
+}
+.first_container{
+  position: fixed;
+  margin-left: -30px;
+  margin-top: -30px;
+  background-color: yellow;
+  height: 100px;
+  width: 100%;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 80px 20px;
+  float: left;
+  position: relative;
+}
+div>.box:nth-child(1){
+  left: 280px;
+}
+div>.box:nth-child(3){
+  left: -280px;
+}
+.miniboxes{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  float: left;
+  margin: 30px 30px;
+}
+.miniboxes:nth-child(4n+1){
+  clear:left;
+}
