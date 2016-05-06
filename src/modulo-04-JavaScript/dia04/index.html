@@ -11,7 +11,7 @@
       <input id="txtNomeCavaleiro" type="text" name="nome" placeholder="Ex: Shiryu">
       <label for="slTipoSanguineo">Tipo Sanguíneo</label>
       <select id="slTipoSanguineo" name="tipoSanguineo">
-        <option>Selecione</option>
+        <option selected>Selecione</option>
         <option value="A">A</option>
         <option value="B">B</option>
         <option value="AB">AB</option>
@@ -19,10 +19,12 @@
       </select>
       <label for="txtUrlImagem">URL Imagem</label>
       <input id="txtUrlImagem" type="text" name="urlImagem" placeholder="Ex: bit.ly/shiryu.png">
-      <label for="txtDataNacimento">Data Nascimento</label>
-      <input id="txtDataNacimento "type="text" name="datNacimento" placeholder="dd/MM/yyyy">
+      <label for="txtDataNascimento">Data Nascimento</label>
+      <input id="txtDataNascimento "type="text" name="dataNascimento" placeholder="dd/MM/yyyy">
       <label for="txtAltura">Altura</label>
       <input id="txtAltura "type="text" name="altura" placeholder="1.80">
+      <label for="txtPeso">Peso</label>
+      <input id="txtPeso" type="text" name="peso" placeholder="80">
       <label for="slSigno">Signo:</label>
       <select id="slSigno" name="signo">
         <option>Selectione</option>
@@ -45,6 +47,7 @@
       <input id="txtLocalTreinamento" type="text" name="localTreinamento" placeholder="Porto Alegre">
       <!--<input type="submit" value="Cadastrar!">-->
       <button id="btnAdicionarGolpe" type="button" name="adicionarGolpe">Adicionar Golpe</button>
+      <button id = "btnAdicionarImagem" type="button" name="adicionarImagem">Adicionar Imagem</button>
       <button type="submit">Cadastrar!</button>
 
     </form>

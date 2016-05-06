@@ -43,27 +43,44 @@ $(function() {
         $detalhesCavaleiro.append($('<h3>').text( nome ));
         $detalhesCavaleiro.append($('<h3>').text( altura / 100 ));
       });
-      setTimeout(function() {
-        $img.off('mouseleave');
-      }, 5000);
+      //setTimeout(function() {
+        //$img.off('mouseleave');
+      //}, 5000);
       if (indice < goldSaints.length - 1) carregaImg(indice + 1);
     };
   })(0);
 
 });
+/*function transformData(){
+   var date = $('#dataNascimento').datepicker({ dateFormat: 'dd/mm/yy' }).val();
+   return date;
 
+}*/
+function converAltura(altura){
+   var altura = parseFloat(altura);
+    return altura * 100;
+}
+function cheked($checkbox){
+  return $checkbox.is(':checked');
+}
 function converterFormParaCavaleiro($form) {
 
   // Obtém o objeto nativo Form através da posição 0 no objeto jQuery e cria um FormData a partir dele
   var formData = new FormData($form[0]);
-
   return {
     nome: formData.get('nome'),
+    dataNascimento: formData.get('dataNascimento'),
     // solução sem FormData:
     // tipoSanguineo: $('#slTipoSanguineo :selected').val()
+    alturaCM: converAltura(formData.get('altura')),
+    pesoLb: formData.get('peso'),
+    signo:formData.get('signo'),
+    golpes: formData.getAll('adicionarGolpe'),
     tipoSanguineo: formData.get('tipoSanguineo'),
+    localNascimento: formData.get('localNascimento'),
+    localTreinamento: formData.get('localTreinamento'),
     imagens: [
-      { url: formData.get('urlImagem'), isThumb: true }
+      { url: formData.getAll('urlImagem'), isThumb: $('thumbnail') ? cheked(formData.getAll('thumbnail')) : true }
     ]
   };
 
@@ -85,10 +102,16 @@ function renderizarCavaleiroNaTela(cavaleiro) {
       )
     );
 };
-  var contId = 0;
 $('#btnAdicionarGolpe').click(function(){
   var $self = $(this);
-  $self.before($('<label>').attr('for', 'txtAdicionarGolpe' + contId));
-  $self.before($('<input>').attr('id', '#txtAdicionarGolpe' + contId).attr('type', 'text').attr('name' , 'adicionarGolpe'));
-  contId++;
-})
+  $self.before($('<label>').attr('for', 'txtAdicionarGolpe').append('Novo Golpe'));
+  $self.before($('<input>').attr('class', 'txtAdicionarGolpe').attr('type', 'text').attr('name' , 'adicionarGolpe'));
+});
+
+$('#btnAdicionarImagem').click(function(){
+  var $self = $(this);
+  $self.before($('<label>').attr('for', 'txtAdicionarImagem').append('Nova Imagem'));
+  $self.before($('<input>').attr('class', 'txtAdicionarImagem').attr('type', 'text').attr('name' , 'urlImagem'));
+  $self.before($('<label>').attr('for', 'chkThumbnail').append('thumbnail'));
+  $self.before($('<input>').attr('class', 'chkThumbnail').attr('type', 'checkbox').attr('name' , 'thumbnail'));
+});
