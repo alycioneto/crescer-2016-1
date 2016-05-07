@@ -11,3 +11,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+src/modulo-04-JavaScript/lib/jquery-2.2.3.min.js
+src/modulo-04-JavaScript/dia04/lib/jquery-2.2.3.min.js
+src/modulo-04-JavaScript/dia03/lib/jquery-2.2.3.min.js
