@@ -1,6 +1,0 @@
-C:\Users\Alycio\Documents\Visual Studio 2015\Megaman\Megaman\bin\Debug\Megaman.exe.config
-C:\Users\Alycio\Documents\Visual Studio 2015\Megaman\Megaman\bin\Debug\Megaman.exe
-C:\Users\Alycio\Documents\Visual Studio 2015\Megaman\Megaman\bin\Debug\Megaman.pdb
-C:\Users\Alycio\Documents\Visual Studio 2015\Megaman\Megaman\obj\Debug\Megaman.csprojResolveAssemblyReference.cache
-C:\Users\Alycio\Documents\Visual Studio 2015\Megaman\Megaman\obj\Debug\Megaman.exe
-C:\Users\Alycio\Documents\Visual Studio 2015\Megaman\Megaman\obj\Debug\Megaman.pdb

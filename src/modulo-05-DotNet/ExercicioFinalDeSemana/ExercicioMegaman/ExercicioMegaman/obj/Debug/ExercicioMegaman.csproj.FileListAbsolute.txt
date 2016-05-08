@@ -1,0 +1,5 @@
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\bin\Debug\ExercicioMegaman.exe.config
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\bin\Debug\ExercicioMegaman.exe
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\bin\Debug\ExercicioMegaman.pdb
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.exe
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.pdb
