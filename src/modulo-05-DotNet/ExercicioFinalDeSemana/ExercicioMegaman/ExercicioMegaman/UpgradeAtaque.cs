@@ -8,8 +8,6 @@ namespace ExercicioMegaman
 {
     public class UpgradeAtaque : IUpgrade
     {
-        public String Nome { get; set; }
-
         public int Ataque
         {
             get
@@ -27,7 +25,6 @@ namespace ExercicioMegaman
 
         public UpgradeAtaque()
         {
-            this.Nome = "Canhão de Plasma";
         }
     }
 }

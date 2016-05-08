@@ -14,17 +14,17 @@ namespace ExercicioMegaman
         }
         protected List<IUpgrade> Upgrades = new List<IUpgrade>();
 
-        public int Vida { get; protected set; }
-        protected int _ataque= 5;
-        protected virtual int Ataque
+        public int Vida { get; set; }
+        private int _ataque= 5;
+        protected virtual int AtaqueRobo
         {
             get
             {
                 return _ataque;
             }
         }
-        protected int _defesa = 0;
-        protected virtual int Defesa
+        private int _defesa = 0;
+        protected virtual int DefesaRobo
         {
             get
             {
@@ -34,12 +34,12 @@ namespace ExercicioMegaman
 
         public virtual void Atacar(Robo robo)
         {
-            robo.ReceberAtaque(this.Ataque);
+            robo.ReceberAtaque(this.AtaqueRobo);
         }
 
         public virtual void ReceberAtaque(int ataque)
         {
-            int dano = ataque - this.Defesa;
+            int dano = ataque - this.DefesaRobo;
             if (dano > 0)
             {
                 this.Vida -= dano;
@@ -47,7 +47,7 @@ namespace ExercicioMegaman
         }
         public override string ToString()
         {
-            return ("Nome: " + this.GetType().Name + ", Vida: " + Vida + ", Ataque: " + Ataque + ", Defesa: " + Defesa);
+            return ("Nome: " + this.GetType().Name + ", Vida: " + Vida + ", Ataque: " + AtaqueRobo + ", Defesa: " + DefesaRobo);
         }
         public virtual void EquiparUpgrade(IUpgrade upgrade)
         {

@@ -19,13 +19,6 @@ namespace TestMegaman
             UpgradeLendario upgrade = new UpgradeLendario();
             Assert.AreEqual(1, upgrade.Ataque);
         }
-        [TestMethod]
-        public void UpgradeCriadoComNomeCorreto()
-        {
-            UpgradeLendario upgrade = new UpgradeLendario();
-            String esperado = "Botas de Super Velocidade";
-            Assert.AreEqual(esperado, upgrade.Nome);
-        }
 
     }
 }

@@ -23,11 +23,5 @@ namespace ExercicioMegaman
                 return 1;
             }
         }
-
-        public string Nome { get; set; }
-        public UpgradeLendario()
-        {
-            this.Nome = "Botas de Super Velocidade";
-        }
     }
 }

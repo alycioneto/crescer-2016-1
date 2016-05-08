@@ -19,13 +19,6 @@ namespace TestMegaman
             UpgradeDefesa upgrade = new UpgradeDefesa();
             Assert.AreEqual(0, upgrade.Ataque);
         }
-        [TestMethod]
-        public void UpgradeCriadoComNomeCorreto()
-        {
-            UpgradeDefesa upgrade = new UpgradeDefesa();
-            String esperado = "Escudo de Energia";
-            Assert.AreEqual(esperado, upgrade.Nome);
-        }
 
     }
 }

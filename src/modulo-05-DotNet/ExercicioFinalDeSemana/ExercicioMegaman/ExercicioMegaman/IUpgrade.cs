@@ -8,7 +8,6 @@ namespace ExercicioMegaman
 {
     public interface IUpgrade
     {
-        String Nome { get; set; }
         int Ataque { get; }
         int Defesa { get; }
     }

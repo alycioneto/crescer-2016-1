@@ -11,23 +11,31 @@ namespace ExercicioMegaman
         public Megaman() : base()
         {
         }
-        protected new int _ataque =6;
-        protected override int Ataque
+        private int _ataque =6;
+        private int _defesa = 0;
+        protected override int AtaqueRobo
         {
             get
             {
                 return _ataque;
             }
         }
+        protected override int DefesaRobo
+        {
+            get
+            {
+                return _defesa;
+            }
+        }
         public override void Atacar(Robo robo)
         {
             if (this.Vida <= 30)
             {
-                robo.ReceberAtaque(this.Ataque + 3);
+                robo.ReceberAtaque(this.AtaqueRobo + 3);
             }
             else
             {
-                robo.ReceberAtaque(this.Ataque);
+                robo.ReceberAtaque(this.AtaqueRobo);
             }
         }
         public override void EquiparUpgrade(IUpgrade upgrade)
@@ -35,19 +43,9 @@ namespace ExercicioMegaman
             if (Upgrades.Count() < 3)
             {
                 Upgrades.Add(upgrade);
-                if (upgrade.GetType().Name == "UpgradeDefesa")
-                {
-                    _defesa += upgrade.Defesa;
-                }
-                else if (upgrade.GetType().Name == "UpgradeAtaque")
-                {
-                    _ataque += upgrade.Ataque;
-                }
-                else
-                {
-                    _defesa += upgrade.Defesa;
-                    _ataque += upgrade.Ataque;
-                }
+               _defesa += upgrade.Defesa;
+               _ataque += upgrade.Ataque;
+                
             }
         }
     }

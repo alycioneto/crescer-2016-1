@@ -56,6 +56,7 @@
     <Compile Include="BotTest.cs" />
     <Compile Include="MegamanTest.cs" />
     <Compile Include="ProtomanTest.cs" />
+    <Compile Include="RushTest.cs" />
     <Compile Include="UpgradeDefesaTest.cs" />
     <Compile Include="UpgradeAtaqueTest.cs" />
     <Compile Include="UpgradeLendarioTest.cs" />
