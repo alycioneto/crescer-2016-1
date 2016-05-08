@@ -40,7 +40,10 @@ namespace ExercicioMegaman
         public virtual void ReceberAtaque(int ataque)
         {
             int dano = ataque - this.Defesa;
-            this.Vida -= dano;
+            if (dano > 0)
+            {
+                this.Vida -= dano;
+            }
         }
         public override string ToString()
         {

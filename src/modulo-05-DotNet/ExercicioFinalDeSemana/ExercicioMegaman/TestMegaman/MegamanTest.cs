@@ -98,5 +98,17 @@ namespace TestMegaman
             megaman.Atacar(bot);
             Assert.AreEqual(89, bot.Vida);
         }
+        [TestMethod]
+        public void MegamanLevaMenosDanoComValorNegativo()
+        {
+            Megaman megaman = new Megaman();
+            Bot bot = new Bot();
+            UpgradeDefesa upgrade = new UpgradeDefesa();
+            megaman.EquiparUpgrade(upgrade);
+            megaman.EquiparUpgrade(upgrade);
+            megaman.EquiparUpgrade(upgrade);
+            bot.Atacar(megaman);
+            Assert.AreEqual(100, megaman.Vida);
+        }
     }
 }
