@@ -1,0 +1,184 @@
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\ApplicationInsights.config
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\csc.exe
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\System.Collections.Immutable.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\vbc.exe
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\VBCSCompiler.exe
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\roslyn\VBCSCompiler.exe.config
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\cameloNinja.dll.config
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\cameloNinja.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\cameloNinja.pdb
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.Web.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.WindowsServer.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.ApplicationInsights.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.Web.Infrastructure.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Helpers.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Mvc.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Razor.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Webpages.Deployment.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Webpages.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Webpages.Razor.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.Web.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.AI.WindowsServer.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.ApplicationInsights.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Razor.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Webpages.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Webpages.Deployment.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Webpages.Razor.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Helpers.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\bin\System.Web.Mvc.xml
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\obj\Debug\cameloNinja.csprojResolveAssemblyReference.cache
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\obj\Debug\cameloNinja.dll
+c:\users\leon.menger\documents\visual studio 2015\Projects\cameloNinja\cameloNinja\obj\Debug\cameloNinja.pdb
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\ApplicationInsights.config
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\csc.exe
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\vbc.exe
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\cameloNinja.dll.config
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\cameloNinja.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\cameloNinja.pdb
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.Web.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Helpers.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Mvc.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Razor.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Webpages.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Webpages.Razor.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.Web.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Razor.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Webpages.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Webpages.Razor.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Helpers.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\bin\System.Web.Mvc.xml
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\obj\Debug\cameloNinja.csprojResolveAssemblyReference.cache
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\obj\Debug\cameloNinja.dll
+C:\Users\Ahrzot\Documents\Camelo-Ninja\cameloNinja\obj\Debug\cameloNinja.pdb
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\obj\Debug\CameloNinja.csprojResolveAssemblyReference.cache
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\obj\Debug\cameloNinja.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\obj\Debug\cameloNinja.pdb
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\ApplicationInsights.config
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\csc.exe
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\vbc.exe
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\cameloNinja.dll.config
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\cameloNinja.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\cameloNinja.pdb
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.Web.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Helpers.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Mvc.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Razor.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Razor.dll
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.Web.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Razor.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Razor.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Helpers.xml
+C:\Users\Alycio\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Mvc.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\ApplicationInsights.config
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\csc.exe
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\vbc.exe
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\VBCSCompiler.exe
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\cameloNinja.dll.config
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\cameloNinja.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\cameloNinja.pdb
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.Web.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.ApplicationInsights.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Helpers.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Mvc.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Razor.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Deployment.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Razor.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.Web.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.ApplicationInsights.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Razor.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Deployment.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Webpages.Razor.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Helpers.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\bin\System.Web.Mvc.xml
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\obj\Debug\CameloNinja.csprojResolveAssemblyReference.cache
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\obj\Debug\cameloNinja.dll
+C:\Users\calvin.gerling\Documents\Camel-Ninja\cameloNinja\obj\Debug\cameloNinja.pdb

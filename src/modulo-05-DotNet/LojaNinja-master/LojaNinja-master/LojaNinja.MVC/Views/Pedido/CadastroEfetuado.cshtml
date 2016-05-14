@@ -1,0 +1,18 @@
+﻿@model LojaNinja.MVC.Models.PedidoModel
+
+@{
+    ViewBag.Title = "Registro Efetuado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-pedido">
+    <h1>Registrado Com Sucesso!</h1>
+    <h3>Item: @Model.NomeProduto</h3>
+    <h3>Cliente: @Model.NomeCliente</h3>
+    <h3>Valor: R$ @Model.ValorVenda</h3>
+    <h3>Modo de Pagamento: @Model.TipoPagamento</h3>
+    <h3>Data de Entrega: @Model.DataEntrega.ToString().Substring(0, 10)</h3>
+    <h3>Cidade: @Model.Cidade - @Model.Estado</h3>
+
+    @Html.ActionLink("Registrar Novo Pedito", "Registro", "Pedido", new { type = "submit", @class = "btn btn-success btn-sm" })
+    @Html.ActionLink("Voltar para Página Inicial", "Index", new { controller = "Main" }, new { type = "submit", @class = "btn btn-default" })
+</div> 

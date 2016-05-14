@@ -1,0 +1,21 @@
+﻿body {
+    background: url("../Imgs/Wallpaper.jpg") no-repeat center 0;
+    background-size: cover;
+
+    padding-top: 80px;
+}
+
+.login {
+    background-color: #c0c0c0;
+    width: 550px;
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.container-pedido {
+    background-color: #c0c0c0;
+    border-color: #c1c1c1;
+    border-radius: 15px;
+    box-shadow: 2px 1px 5px 0px;
+    padding: 10px 8px 10px 8px;
+}
