@@ -175,6 +175,9 @@
     <Content Include="Views\Pedido\Registro.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Main\Login.cshtml" />
+    <Content Include="Views\Pedido\Detalhes.cshtml" />
+    <Content Include="Views\Pedido\Listagem.cshtml" />
+    <Content Include="Views\Pedido\Excluir.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

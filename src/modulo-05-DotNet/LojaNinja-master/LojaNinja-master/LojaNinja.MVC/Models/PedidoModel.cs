@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LojaNinja.Dominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -7,20 +8,14 @@ using System.Web;
 
 namespace LojaNinja.MVC.Models
 {
-    public enum TipoPagamento
-    {
-        Amex = 1,
-        Diners = 2,
-        Visa = 3,
-        Mastercard = 4
-    }
+ 
 
     public class PedidoModel
     {
         public int? Id { get; set; }
         [Required]
-        [DisplayName("Nome Cliente: ")]
-        [StringLength(160, ErrorMessage = "Digite um Nome")]
+        [DisplayName("Nome: ")]
+        [StringLength(160, ErrorMessage = "Nome invalido, no maximo 160 caracteres")]
         public string NomeCliente { get; set; }
 
         [Required]
@@ -37,7 +32,9 @@ namespace LojaNinja.MVC.Models
         [DataType(DataType.Date)]
         [DisplayName("Data de entrega: ")]
         public DateTime DataEntrega { get; set; }
-
+        [DataType(DataType.Date)]
+        [DisplayName("Data do pedido: ")]
+        public DateTime DataPedido { get; set; }
         [Required]
         [DisplayName("Cartão de Credito: ")]
         [EnumDataType(typeof(TipoPagamento), ErrorMessage ="Selecione uma opção")]
@@ -49,5 +46,23 @@ namespace LojaNinja.MVC.Models
         [Required]
         [StringLength(2, ErrorMessage ="Estado com nome muito grande")]
         public string Estado { get; set; }
+
+        [Display(Name = "Produto Urgente")]
+        public bool Urgente { get; set; }
+        public PedidoModel(Pedido pedido)
+        {
+            this.Id = pedido.Id;
+            this.DataPedido = pedido.DataPedido;
+            this.DataEntrega = pedido.DataEntregaDesejada;
+            this.NomeProduto = pedido.NomeProduto;
+            this.ValorVenda = pedido.Valor;
+            this.TipoPagamento =pedido.TipoPagamento;
+            this.NomeCliente = pedido.NomeCliente;
+            this.Cidade = pedido.Cidade;
+            this.Estado = pedido.Estado;
+            this.Urgente = pedido.PedidoUrgente;
+        }
+
+        public PedidoModel() { }
     }
 }

@@ -23,17 +23,7 @@ namespace LojaNinja.MVC.Controllers
             {
                 var pedido = repositorio.ObterPedidoPorId(id.Value);
 
-                var pedidoEncontrado = new PedidoModel() {
-                    Id = pedido.Id,
-                    NomeCliente = pedido.NomeCliente,
-                    NomeProduto = pedido.NomeProduto,
-                    ValorVenda = pedido.Valor,
-                    DataEntrega = pedido.DataEntregaDesejada,
-                    TipoPagamento = (Models.TipoPagamento)pedido.TipoPagamento,
-                    Cidade = pedido.Cidade,
-                    Estado = pedido.Estado                    
-                    
-                };
+                var pedidoEncontrado = new PedidoModel(pedido);
                 return View("Registro", pedidoEncontrado);
             }
             else
@@ -44,15 +34,24 @@ namespace LojaNinja.MVC.Controllers
 
         public ActionResult Salvar(PedidoModel pedido)
         {
+            PedidoModel model;
             if(ModelState.IsValid)
             {
                 try
                 {
-                    var novoPedido = new Pedido(pedido.DataEntrega, pedido.NomeProduto, pedido.ValorVenda,(Dominio.TipoPagamento) pedido.TipoPagamento, pedido.NomeCliente, pedido.Cidade, pedido.Estado);
-                    //if (model.Id.HasValue)
-                    //    repositorio.AtualizarPedido(pedido);
-                    //else
-                    repositorio.IncluirPedido(novoPedido);
+
+                    if (pedido.Id.HasValue)
+                    {
+                        var atualizarPedido = new Pedido((int)pedido.Id, pedido.DataPedido, pedido.DataEntrega, pedido.NomeProduto, pedido.ValorVenda, pedido.TipoPagamento, pedido.NomeCliente, pedido.Cidade, pedido.Estado, pedido.Urgente);
+                        repositorio.AtualizarPedido(atualizarPedido);
+                        model = new PedidoModel(atualizarPedido);
+                    }
+                    else
+                    {
+                        var novoPedido = new Pedido(pedido.DataEntrega, pedido.NomeProduto, pedido.ValorVenda, pedido.TipoPagamento, pedido.NomeCliente, pedido.Cidade, pedido.Estado);
+                        repositorio.IncluirPedido(novoPedido);
+                        pedido.Id = novoPedido.Id;
+                    }
                     return View("CadastroEfetuado", pedido);
                 }
                 catch (ArgumentException ex)
@@ -62,5 +61,21 @@ namespace LojaNinja.MVC.Controllers
             }
                 return View("Registro", pedido);        
         }
+        public ActionResult Detalhes(int id)
+        {
+            var pedido = new PedidoModel(repositorio.ObterPedidoPorId(id));   
+            return View(pedido);
+        }
+        public ActionResult Listagem() {
+            var listaDeProdutos = repositorio.ObterPedidos();
+            return View(listaDeProdutos);
+        }
+        public ActionResult Excluir(int id)
+        {
+            var pedidoExcluido = repositorio.ObterPedidoPorId(id);
+            repositorio.ExcluirPedido(id);
+            return View(pedidoExcluido);
+        }
+
     }
 }
