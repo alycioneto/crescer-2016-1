@@ -13,9 +13,8 @@
 @using (Html.BeginForm("Salvar", "Pedido", FormMethod.Post))
 {
     <div class="form-horizontal container-pedido">
+        @Html.TextBoxFor(model => model.Id, new { @class = "hidden" })
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.TextBoxFor(model => model.Id, new { @class = "form-control hidden" })
-        @Html.TextBoxFor(model => model.DataPedido, new { @class = "form-control hidden" })
         <div class="form-group">
             @Html.LabelFor(model => model.NomeCliente, new { @class = "control-label col-md-2" })
             <div class="col-md-8">

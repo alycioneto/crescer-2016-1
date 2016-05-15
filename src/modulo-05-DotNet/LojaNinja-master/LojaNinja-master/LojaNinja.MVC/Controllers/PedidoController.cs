@@ -22,7 +22,7 @@ namespace LojaNinja.MVC.Controllers
             if (id.HasValue)
             {
                 var pedido = repositorio.ObterPedidoPorId(id.Value);
-
+                TempData["DataPedido"] = pedido.DataPedido;
                 var pedidoEncontrado = new PedidoModel(pedido);
                 return View("Registro", pedidoEncontrado);
             }
@@ -34,7 +34,6 @@ namespace LojaNinja.MVC.Controllers
 
         public ActionResult Salvar(PedidoModel pedido)
         {
-            PedidoModel model;
             if(ModelState.IsValid)
             {
                 try
@@ -42,9 +41,9 @@ namespace LojaNinja.MVC.Controllers
 
                     if (pedido.Id.HasValue)
                     {
-                        var atualizarPedido = new Pedido((int)pedido.Id, pedido.DataPedido, pedido.DataEntrega, pedido.NomeProduto, pedido.ValorVenda, pedido.TipoPagamento, pedido.NomeCliente, pedido.Cidade, pedido.Estado, pedido.Urgente);
+                        var dataPedido = (DateTime)TempData["DataPedido"] ;
+                        var atualizarPedido = new Pedido((int)pedido.Id, dataPedido, pedido.DataEntrega, pedido.NomeProduto, pedido.ValorVenda, pedido.TipoPagamento, pedido.NomeCliente, pedido.Cidade, pedido.Estado, pedido.Urgente);
                         repositorio.AtualizarPedido(atualizarPedido);
-                        model = new PedidoModel(atualizarPedido);
                     }
                     else
                     {
@@ -66,8 +65,16 @@ namespace LojaNinja.MVC.Controllers
             var pedido = new PedidoModel(repositorio.ObterPedidoPorId(id));   
             return View(pedido);
         }
-        public ActionResult Listagem() {
+        public ActionResult Listagem(string cliente, string produto) {
             var listaDeProdutos = repositorio.ObterPedidos();
+            if(!String.IsNullOrWhiteSpace(cliente))
+            {
+                listaDeProdutos = listaDeProdutos.Where( clie => clie.NomeCliente.ToLower().Equals(cliente.ToLower())).ToList();
+            }
+            if (!String.IsNullOrWhiteSpace(produto))
+            {
+                listaDeProdutos = listaDeProdutos.Where(prod => prod.NomeProduto.ToLower().Equals(produto.ToLower())).ToList();
+            }
             return View(listaDeProdutos);
         }
         public ActionResult Excluir(int id)
@@ -76,6 +83,5 @@ namespace LojaNinja.MVC.Controllers
             repositorio.ExcluirPedido(id);
             return View(pedidoExcluido);
         }
-
     }
 }

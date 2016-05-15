@@ -62,17 +62,15 @@
                 </td>
                 <td>
                     @{
-                        string eUrgente;
                         if (item.PedidoUrgente)
                         {
-                            eUrgente = "Sim";
+                            <span class="glyphicon glyphicon-thumbs-up btn green"></span>
                         }
                         else
                         {
-                            eUrgente = "Não";
+                            <span class="glyphicon glyphicon-warning-sign btn red"></span>
                         }
                     }
-                    @eUrgente
                 </td>
                 <td class ="col-sm-2">
                     

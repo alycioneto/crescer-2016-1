@@ -21,3 +21,11 @@
 .hidden {
     display:none;
 }
+.green{
+    background-color:darkseagreen;
+    color:white;
+}
+.red{
+    background-color:indianred;
+    color: black;
+}

@@ -22,3 +22,7 @@ C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-
 C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\obj\Debug\LojaNinja.DominioTest.csprojResolveAssemblyReference.cache
 C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\obj\Debug\LojaNinja.DominioTest.dll
 C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\obj\Debug\LojaNinja.DominioTest.pdb
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\bin\Debug\LojaNinja.Dominio.dll
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\bin\Debug\LojaNinja.Repositorio.dll
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\bin\Debug\LojaNinja.Dominio.pdb
+C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\LojaNinja-master\LojaNinja-master\LojaNinja.DominioTest\bin\Debug\LojaNinja.Repositorio.pdb

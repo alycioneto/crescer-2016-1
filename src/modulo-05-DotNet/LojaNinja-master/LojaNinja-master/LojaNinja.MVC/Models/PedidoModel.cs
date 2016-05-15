@@ -32,7 +32,6 @@ namespace LojaNinja.MVC.Models
         [DataType(DataType.Date)]
         [DisplayName("Data de entrega: ")]
         public DateTime DataEntrega { get; set; }
-        [DataType(DataType.Date)]
         [DisplayName("Data do pedido: ")]
         public DateTime DataPedido { get; set; }
         [Required]
