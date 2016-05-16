@@ -1,6 +1,5 @@
 ﻿body {
-    background: url("../Imgs/Wallpaper.jpg") no-repeat center 0;
-
+    background-color:#cccccc;
     padding-top: 80px;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .container-pedido {
-    background-color: #EFEBE9;
+    background-color: #d7c7b6;
     border-color: #c1c1c1;
     border-radius: 15px;
     box-shadow: 2px 1px 5px 0px;

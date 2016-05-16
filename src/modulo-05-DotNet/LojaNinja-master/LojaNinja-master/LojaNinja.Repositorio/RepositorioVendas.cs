@@ -59,8 +59,7 @@ namespace LojaNinja.Repositorio
         {
             var pedidos = this.ObterPedidos();
             var index = pedidos.FindIndex(a => a.Id == pedido.Id);
-            pedidos.Remove(pedidos.FirstOrDefault(remover => remover.Id == pedido.Id));
-            pedidos.Insert(index, pedido);
+            pedidos[index] = pedido;
             this.PopularArquivo(pedidos);
         }
 

@@ -8,7 +8,7 @@
     <a href="~/Pedido/Registro" class="btn btn-primary">Cadastrar novo Pedido</a>
 </p>
 <div class="container-pedido">
-    <table class="table table-bordered table-striped">
+    <table class="table table-striped">
         <tr>
             <th>ID</th>
             <th>Data do Pedido</th>
@@ -64,11 +64,12 @@
                     @{
                         if (item.PedidoUrgente)
                         {
-                            <span class="glyphicon glyphicon-thumbs-up btn green"></span>
+                            <span class="glyphicon glyphicon-warning-sign btn red"></span>
+
                         }
                         else
                         {
-                            <span class="glyphicon glyphicon-warning-sign btn red"></span>
+                            <span class="glyphicon glyphicon-thumbs-up btn green"></span>
                         }
                     }
                 </td>

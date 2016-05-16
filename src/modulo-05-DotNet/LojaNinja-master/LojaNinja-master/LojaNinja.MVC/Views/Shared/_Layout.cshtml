@@ -13,15 +13,24 @@
     <link href="~/Content/Style/styleBody.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/Main/Index">Camelô Ninja</a>
+            <div class="navbar-header text-center">
+                <a class="navbar-brand" href="/Main/Index"> Camelô Ninja</a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-right">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pedido <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Pedido/Registro">Novo pedido</a></li>
+                            <li><a href="/Pedido/Listagem">Lista pedidos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="btn btn-default btn-sm navbar-btn" href="/Main/Login">Entrar</a> 
+                        <a href="/Main/Login">Entrar</a>
                     </li>
                 </ul>
             </div>
@@ -31,6 +40,8 @@
     <div class="container">
         @RenderBody()
     </div>
+    <script src="~/Content/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Content/Scripts/bootstrap.min.js"></script>
     @RenderSection("scripts", false)
 </body>
 </html>
