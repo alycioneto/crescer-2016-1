@@ -60,13 +60,14 @@ var contarPorTipo = function(objeto, string){
       if (typeof objeto[i] === string ){
         cont++;
       }
-      else if (string == "null") {
-        objeto[i] == string
+      else if (string == "null" && objeto[i] === string) {
+        cont++
       }
-      else if(string == "array")
-      objeto[i] instanceof Array ? cont++:cont;
-   }
-   return cont;
+      else if(string == "array" && objeto[i] instanceof Array ){
+       cont++;
+      }
+    }
+       return cont;
 }
 
 // No momento que dentro da function, a variavel gohan é novamente declarada com var, ela volta a ser undefined, perdendo valor que já sido informado;

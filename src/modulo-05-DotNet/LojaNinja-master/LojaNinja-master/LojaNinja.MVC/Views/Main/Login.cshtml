@@ -1,17 +1,27 @@
-﻿@{ 
+﻿@model LojaNinja.MVC.Models.LoginModel
+@{ 
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using (Html.BeginForm("Salvar", "Pedido", FormMethod.Post))
+{
 
-<form class="form-signin login">
-    <h2 class="form-signin-heading">Entrar</h2>
-    <label for="inputEmail" class="sr-only">Email</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="">
-    <label for="inputPassword" class="sr-only">Senha</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="remember-me"> Lembrar-me
-        </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-</form>
+    <div class="form-horizontal container-pedido login">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new {@class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "Email" })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.PasswordFor(model => model.Senha, new { @class = "form-control", placeholder = "Senha" })
+                @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger"})
+            </div>
+        </div>
+        <button class="btn btn-lg btn-primary btn-group-lg" type="submit">Entrar</button>
+        <button class="btn btn-lg btn-primary btn-group-lg" type="submit">Faça seu registro</button>
+     </div>
+}

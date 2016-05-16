@@ -4,3 +4,6 @@ C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioF
 C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.exe
 C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.pdb
 C:\Users\Alycio\Documents\crescer-2016-1\crescer\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.csprojResolveAssemblyReference.cache
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\bin\Debug\ExercicioMegaman.exe.config
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.exe
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-05-DotNet\ExercicioFinalDeSemana\ExercicioMegaman\ExercicioMegaman\obj\Debug\ExercicioMegaman.pdb

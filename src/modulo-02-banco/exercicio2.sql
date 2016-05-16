@@ -33,11 +33,12 @@ rollback
 select IDAssociado, nome, 
 	Case when sexo = 'F' then 'Feminino'
 		 when sexo = 'M' then 'Masculino'
-		 else 'sei l√°'
+		 else 'sei l·'
 	End Genero
 from associado;
 
 --13
+use cursosql
 select NomeEmpregado, salario, 
 		Case when salario < 1164 then '0%'
 			when salario between  1164 and 2326 then '15%'
@@ -52,5 +53,3 @@ rollback
 --15
 --http://www.w3schools.com/sql/sql_unique.asp
 alter table cidade add constraint UK_Nome_UF UNIQUE (Nome,UF)
-
-

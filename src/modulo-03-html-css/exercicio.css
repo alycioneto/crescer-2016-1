@@ -4,6 +4,8 @@ body{
 .container{
   margin-bottom: : 30px;
   overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 .first_container{
   position: fixed;

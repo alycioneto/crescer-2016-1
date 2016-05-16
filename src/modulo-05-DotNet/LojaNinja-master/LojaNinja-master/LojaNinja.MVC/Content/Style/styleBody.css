@@ -4,10 +4,9 @@
 }
 
 .login {
-    background-color: #c0c0c0;
     width: 550px;
     padding: 0px 10px 10px 10px;
-    border-radius: 10px;
+    margin: 0 auto;
 }
 
 .container-pedido {

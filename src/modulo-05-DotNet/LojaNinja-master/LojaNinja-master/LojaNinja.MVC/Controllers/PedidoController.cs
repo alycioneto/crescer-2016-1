@@ -83,5 +83,9 @@ namespace LojaNinja.MVC.Controllers
             repositorio.ExcluirPedido(id);
             return View(pedidoExcluido);
         }
+        public ActionResult Cadastro()
+        {
+            return View();
+        }
     }
 }
