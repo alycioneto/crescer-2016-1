@@ -1,12 +1,12 @@
-﻿@model LojaNinja.MVC.Models.LoginModel
+﻿@model LojaNinja.MVC.Models.LoginViewModel
 @{ 
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@using (Html.BeginForm("Salvar", "Pedido", FormMethod.Post))
+@using (Html.BeginForm("Entrar", "Login", FormMethod.Post, new { @class = "form" }))
 {
-
+    @Html.AntiForgeryToken()
     <div class="form-horizontal container-pedido login">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.ValidationSummary(excludePropertyErrors: false)
         <div class="form-group">
             @Html.LabelFor(model => model.Email, new {@class = "control-label col-md-2" })
             <div class="col-md-8">
@@ -22,6 +22,6 @@
             </div>
         </div>
         <button class="btn btn-lg btn-primary btn-group-lg" type="submit">Entrar</button>
-        <button class="btn btn-lg btn-primary btn-group-lg" type="submit">Faça seu registro</button>
+        @Html.ActionLink("Faça seu registro", "CadastroUsuario", new { type = "submit", @class ="btn btn-lg btn-primary btn-group-lg" })
      </div>
 }
