@@ -13,6 +13,10 @@ function CavaleiroIndexView(options) {
     });
 };
 
+$('#txtDtNascimento').datepicker({
+    dateFormat: 'dd/MM/yy'
+});
+
 CavaleiroIndexView.prototype.render = function () {
     var self = this;
 
@@ -77,8 +81,9 @@ CavaleiroIndexView.prototype.excluirCavaleiroNoServidor = function (e) {
         });
 };
 CavaleiroIndexView.prototype.InserirCavaleiroNoServidor = function (e) {
+    debugger;
     var self = e.self;
-    self.cavaleiros.inserir(e.cavaleiro);
+    self.cavaleiros.inserir(e.Cavaleiro);
 }
 CavaleiroIndexView.prototype.editarCavaleiroNoServidor = function(e) {
     var cavaleiroId = e.data.id;

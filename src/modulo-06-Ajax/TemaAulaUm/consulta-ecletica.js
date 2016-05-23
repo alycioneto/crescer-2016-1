@@ -12,7 +12,7 @@ $(function() {
       $.get({url: 'https://api.spotify.com/v1/search/',
              data: {q: valorFormulario, type: 'artist',}
       }).then(
-             function(obj){ 
+             function(obj){
                   eOJustin ?  exibirAlbums('douchebag') : exibirAlbums(obj.artists.items[0].id) ;
              });
       return e.preventDefault();

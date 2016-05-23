@@ -3,3 +3,7 @@ C:\Users\Alycio\Desktop\CdZ\src\CdZ.Dominio\bin\Debug\CdZ.Dominio.pdb
 C:\Users\Alycio\Desktop\CdZ\src\CdZ.Dominio\obj\Debug\CdZ.Dominio.dll
 C:\Users\Alycio\Desktop\CdZ\src\CdZ.Dominio\obj\Debug\CdZ.Dominio.pdb
 C:\Users\Alycio\Desktop\CdZ\src\CdZ.Dominio\obj\Debug\CdZ.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Dominio\bin\Debug\CdZ.Dominio.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Dominio\bin\Debug\CdZ.Dominio.pdb
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Dominio\obj\Debug\CdZ.Dominio.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Dominio\obj\Debug\CdZ.Dominio.pdb

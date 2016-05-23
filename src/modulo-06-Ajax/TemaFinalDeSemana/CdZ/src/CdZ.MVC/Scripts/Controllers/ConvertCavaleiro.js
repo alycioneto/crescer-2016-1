@@ -3,24 +3,27 @@ function ConvertCavaleiro() { };
 
 ConvertCavaleiro.prototype.toModel = function ($form) {
     var form = new FormData($form[0]);
-    var golpes = [];
-    $('novosGolpes li').each(
-        golpes.push({
-            Nome: form.get('golpes'),
-        }));
-    var imagens = [];
-    $('novasImagens li ').each(
-        imagens.push({
-            UrlImagem: form.get('urlImagem'),
-            IsThumb: form.get('isThumb').is(':checked'),
-        })
-        );
-    return caveleiro = {
+    var golpes = $("input[name='golpe']").map(function () { return $(this).val(); }).get();
+   // $('novosGolpes li').each(
+     //   golpes.push({
+       //     Nome: form.get('golpes'),
+        //}));
+    var imagens = $("#novasImagens li").map(function () { return { url: $(this).find("input[name='urlImagem']").val(), isThumb: $(this).find("input[name='isThumb']").is(":checked") } }).get();
+        //imagens.push({
+          //  UrlImagem: form.get('urlImagem'),
+            //IsThumb: form.get('isThumb').is(':checked'),
+        //})
+    //);
+
+    var data = $('#txtDtNascimento').datepicker('getDate');
+    var altura = converteEmMetros(form.get('alturaMetros'));
+    var peso = converteEmLB(form.get('pesoKg'));
+    return {
         Nome: form.get('nome'),
         TipoSanguineo: form.get('tipoSanguineo'),
-        DataNascimento: form.get('dataNascimento').toISOString(),
-        AlturaCm: form.get('nbAlturaMetros') * 100,
-        PesoLb: converteEmLB(form.get('nbPesoKilos')),
+        DataNascimento: new data.toISOString(),
+        AlturaCm: altura,
+        PesoLb:peso ,
         Signo: form.get('signo'),
         LocalNascimento: {
             Texto: form.get('localNascimento')
@@ -30,8 +33,11 @@ ConvertCavaleiro.prototype.toModel = function ($form) {
         },
         Golpes: golpes,
         Imagens: imagens,
-    }
+    };
 }
 var converteEmLB = function (pesoEmKG) {
-    return Math.round(((pesoEmKG * 2.20462)* 100) / 100);
+    return Math.round(((parseInt(pesoEmKG) * 2.20462)* 100) / 100);
+};
+var converteEmMetros = function (alturaEmMetros) {
+    return parseInt(alturaEmMetros)* 100;
 };
