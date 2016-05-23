@@ -1,0 +1,7 @@
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\bin\Debug\CdZ.Domino.Test.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\bin\Debug\CdZ.Domino.Test.pdb
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.csprojResolveAssemblyReference.cache
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.pdb

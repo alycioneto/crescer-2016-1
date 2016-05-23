@@ -1,0 +1,16 @@
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.csprojResolveAssemblyReference.cache
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.Migrations.Inicial.resources
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.csproj.GenerateResource.Cache
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Repositorio.EF.dll.config
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Repositorio.EF.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Repositorio.EF.pdb
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Dominio.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Dominio.pdb
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.xml
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.dll
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.pdb
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.Migrations.CavaleirosDeleteOnCascade.resources
+C:\Users\Alycio\Desktop\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.Migrations.CascadeDeleteLocal.resources
