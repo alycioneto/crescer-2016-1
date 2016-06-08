@@ -1,0 +1,14 @@
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Repositorio.EF.dll.config
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Repositorio.EF.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Repositorio.EF.pdb
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Dominio.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\CdZ.Dominio.pdb
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.xml
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.csprojResolveAssemblyReference.cache
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.Migrations.Inicial.resources
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.csproj.GenerateResource.Cache
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia02\CdZ\src\CdZ.Repositorio.EF\obj\Debug\CdZ.Repositorio.EF.pdb

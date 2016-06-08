@@ -1,0 +1,5 @@
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia01\CdZ\CdZ.Dominio\bin\Debug\CdZ.Dominio.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia01\CdZ\CdZ.Dominio\bin\Debug\CdZ.Dominio.pdb
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia01\CdZ\CdZ.Dominio\obj\Debug\CdZ.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia01\CdZ\CdZ.Dominio\obj\Debug\CdZ.Dominio.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\dia01\CdZ\CdZ.Dominio\obj\Debug\CdZ.Dominio.pdb

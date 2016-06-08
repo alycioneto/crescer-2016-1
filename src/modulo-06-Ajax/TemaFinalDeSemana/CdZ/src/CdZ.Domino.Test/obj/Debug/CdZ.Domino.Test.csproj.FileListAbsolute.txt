@@ -5,3 +5,9 @@ C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\bin\Debug\Microsoft.VisualStudio
 C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.csprojResolveAssemblyReference.cache
 C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.dll
 C:\Users\Alycio\Desktop\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.pdb
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Domino.Test\bin\Debug\CdZ.Domino.Test.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Domino.Test\bin\Debug\CdZ.Domino.Test.pdb
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Domino.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.csprojResolveAssemblyReference.cache
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.dll
+C:\Users\alycio.neto\Documents\crescer-2016-1\src\modulo-06-ajax\TemaFinalDeSemana\CdZ\src\CdZ.Domino.Test\obj\Debug\CdZ.Domino.Test.pdb

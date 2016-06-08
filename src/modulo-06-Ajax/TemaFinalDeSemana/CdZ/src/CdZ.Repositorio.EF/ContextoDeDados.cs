@@ -19,7 +19,7 @@ namespace CdZ.Repositorio.EF
          * A classe deve saber onde está o banco de dados,
          * Então a classe DbContext precisa saber o nome da ConnectionString de acesso.
          */
-        public ContextoDeDados() : base("ConexaoCasa")
+        public ContextoDeDados() : base("ConexaoCdZ")
         {
 
         }

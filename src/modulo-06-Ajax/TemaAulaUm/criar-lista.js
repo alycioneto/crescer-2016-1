@@ -5,9 +5,9 @@ var $adicinarAlbuns = function(url){
 var exibirAlbums = function (id){
     var url = 'https://api.spotify.com/v1/artists/' + (id ? id : '6mdiAmATAx73kdxrNrnlao') + '/albums?limit=50';
     $.get(url).then(function(res){
-            res.items.forEach(   
+            res.items.forEach(
                     function(album){
-                        $adicinarAlbuns(album.images[0].url);
+                        $adicinarAlbuns(album.images[1].url);
                     })
             ;},function(res){
                 var criarSpanComErro = function (status, statusText) {
@@ -15,6 +15,6 @@ var exibirAlbums = function (id){
                 };
              $('#lista-albums')
              .append(criarSpanComErro(res.status, res.statusText));
-            } 
+           }
     )
 };
