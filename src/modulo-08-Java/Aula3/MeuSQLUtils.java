@@ -13,7 +13,9 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.logging.Logger;
+
 
 /**
  *
@@ -49,5 +51,36 @@ public class MeuSQLUtils {
                     break;
         }
         return sql;
+    }
+     public void imprimeTabela(String sql){
+        ArrayList<String> tabela = new ArrayList<String>();
+        try (final Connection connection = ConnectionUtils.getConnection()) {
+            try (final Statement statement = connection.createStatement()) {
+              try (final ResultSet resultSet = statement.executeQuery(sql)) {
+                  ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
+                  int numeroDeColunas = resultSetMetaData.getColumnCount();
+                  String colunas = "Linha  ";
+                  for (int i = 0; i < numeroDeColunas; i++) {
+                      colunas += resultSetMetaData.getColumnName(i) + "  " ;
+                  }
+                  tabela.add(colunas);
+                  int contLinhas = 0;
+                  while (resultSet.next()) {
+                      String linha = String.valueOf(contLinhas);
+                      for (int i = 0; i < numeroDeColunas; i++) {
+                          linha += resultSet.getString(i);
+                      }
+                      tabela.add(linha);
+                      contLinhas++;
+                    }
+              } catch (final SQLException e) {
+                    System.err.format("SQLException: %s", e);
+              }
+            } catch(final SQLException e){   
+                System.err.format("SQLException: %s", e);
+            }
+        } catch (final SQLException e) {
+        System.err.format("SQLException: %s", e);
+        }
     }
 }
