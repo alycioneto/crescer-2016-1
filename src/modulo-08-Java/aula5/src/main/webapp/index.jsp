@@ -31,7 +31,7 @@
                 </thead>
                 <tbody>    
                     <tr>
-                        
+                        ${param.list}
                     </tr>
                 </tbody>
             </table>
