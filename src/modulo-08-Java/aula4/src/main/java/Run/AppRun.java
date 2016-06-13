@@ -22,18 +22,18 @@ public class AppRun {
     
     public static void main(String[] args) {
         System.out.println(em.isOpen());
-        Pessoa pessoa = em.find(Pessoa.class, 2l);
-        System.out.println(pessoa.getNmPessoa());
-        Pessoa pessoaNova = new Pessoa();
-        pessoaNova.setNmPessoa("NovoTeste");
-        em.getTransaction().begin();
-        em.persist(pessoaNova);
-        em.getTransaction().commit();
-        Query query = em.createQuery("SELECT p FROM Pessoa p");
-        List<Pessoa> pessoas = query.getResultList();
-        for (Pessoa pessoa1 : pessoas) {
-            System.out.println(pessoa1.getNmPessoa());
-        }
+        //Pessoa pessoa = em.find(Pessoa.class, 1l);
+        //System.out.println(pessoa.getNmPessoa());
+        //Pessoa pessoaNova = new Pessoa();
+       // pessoaNova.setNmPessoa("NovoTeste");
+        //em.getTransaction().begin();
+        //em.persist(pessoaNova);
+        //em.getTransaction().commit();
+        //Query query = em.createQuery("SELECT p FROM Pessoa p");
+        //List<Pessoa> pessoas = query.getResultList();
+        //for (Pessoa pessoa1 : pessoas) {
+        //    System.out.println(pessoa1.getNmPessoa());
+        //}
         em.close();
         emf.close();
     }
